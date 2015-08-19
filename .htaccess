@@ -1,0 +1,51 @@
+php_value output_handler ob_gzhandler
+
+AddDefaultCharset iso-8859-1
+
+RewriteEngine On
+
+#rewrites tuksi
+RewriteRule ^tuksi /index.php
+
+RewriteRule ^thirdparty - [L]
+RewriteRule ^uploads - [L]
+
+# files in newsletter has "newsletter" in folder, so we can detect non released files
+RewriteRule ^newsletter/downloads/([0-9]+)/.*$ /services/downloads.php?fileid=$1&newsletter=true [QSA]
+RewriteRule ^newsletter(/|$) /index.php
+ 
+ReWriteCond %{HTTP_HOST} preview\.
+ReWriteRule ^robots.txt$ robots_preview.txt
+ 
+#normal frontend
+RewriteRule ^([-\w]+)/?$ /index.php?token=$1 [QSA]
+RewriteRule ^([-\w]+)/([/-\w]+)\.html$ /index.php?token=$1&urlpart=$2 [QSA]
+RewriteRule ^([-\w]+)\.html$ /index.php?urlpart=$1 [QSA]
+
+#downloads
+RewriteRule ^downloads/([0-9]+)/.*$ /services/downloads.php?fileid=$1 [QSA]
+
+#e-mail tracking
+RewriteRule ^email\.([0-9]+)_([0-9A-Za-z]+)/email\.gif /services/newsletter/tracking.php?trackingid=$1&md5=$2
+RewriteRule ^mail_redirect/([0-9]+)\.([0-9]+)_([0-9A-Za-z]+)/ /services/newsletter/tracking_redirect.php?moduleid=$1&trackingid=$2&md5=$3
+RewriteRule ^mail_redirect_link/([0-9]+)\.([0-9]+)_([0-9A-Za-z]+)/ /services/newsletter/tracking_redirect_link.php?linkid=$1&trackingid=$2&md5=$3
+
+# Catch faulty links
+RewriteRule ^([0-9A-Za-z_/]+)/$ / [R=301,L]
+
+### turn on the Expires engine
+#ExpiresActive On
+
+#ExpiresDefault "access plus 1 month"
+
+### expires after a month in the client's cache
+#ExpiresByType image/gif A2592000
+#ExpiresByType image/png A2592000
+#ExpiresByType image/jpg A2592000
+#ExpiresByType image/x-icon A2592000
+#ExpiresByType application/pdf A2592000
+#ExpiresByType application/x-javascript A2592000
+#ExpiresByType application/javascript A2592000
+#ExpiresByType text/plain A2592000
+#ExpiresByType text/css A2592000
+#ExpiresByType text/javascript A2592000

@@ -1,0 +1,4 @@
+uploads/*
+media/*
+*.swp
+templates/compiled/*
