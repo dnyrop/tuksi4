@@ -1,0 +1,44 @@
+/* Tuksi Frontend - Stylesheet */
+/* Version 2005-09-09-AMA */
+
+
+/* module elements */
+
+
+/* Debugging design */
+
+div.debug {
+	background: #e6e7e0;
+	border: 1px #c2c2ba solid;
+	margin: 27px 15px 14px;
+}
+	div.debug_inner {
+		padding: 10px;
+	}
+		div.debug h1, div.debug .new_head {
+			color:#7f1301 !important;
+			font: bold 12px/23px arial, sans-serif !important;
+			height: 23px !important;
+			padding: 0 0 0 6px !important;
+			margin: 0 !important;
+		}
+		div.debug table {
+			border-spacing: 2px !important;
+			width: 100%;
+		}
+		div.debug table td {
+			height: 16px !important;
+		}
+		div.debug table tr.even td {
+			background: #e1e3dc !important;
+		}
+		
+		table.explain {
+			border-spacing: 0 !important;
+			border-collapse:collapse;
+		}
+		table.explain td{
+			border-collapse:collapse;
+			border:1px solid #003F2F;
+			padding:2px;
+		}

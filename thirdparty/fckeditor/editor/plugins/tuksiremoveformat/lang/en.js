@@ -1,0 +1,1 @@
+FCKLang.TuksilinkDlgTitle		= 'Insert link' ;

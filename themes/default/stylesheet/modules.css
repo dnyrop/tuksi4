@@ -1,0 +1,1731 @@
+/* Tuksi Backend - Stylesheet */
+/* RPE 04.10.2007 */
+/* module elements */
+
+/* SKAL FIXES!! */
+
+div.autocomplete {
+	position: absolute;
+	/* width: 400px; */ /* will be adjusted by script.aculo.us */
+	background-color: #fff;
+	border: 1px solid #888;
+	margin: 0px; padding: 0px;
+}
+	div.autocomplete ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+		div.autocomplete ul li.selected {
+			background-color: #BFE9F3;
+		}
+		
+		div.autocomplete ul li {
+			list-style-type: none;
+			display: block;
+			color: #444;
+			margin: 0;
+			padding: 0 3px;
+			height: 1.5em;
+			line-height: 1.5em;
+			cursor: pointer;
+		}
+
+
+
+/****************************************************************************************************************/	
+/********** Buttons *********************************************************************************************/	
+/****************************************************************************************************************/
+
+		/*Default Button HTML Eks:  <a href="#" class="buttonType1"><span><span>Button Text</span></span></a>  **/
+
+		
+/****************************************************************************************************************/
+/********** Button Type 1 ***************************************************************************************/	
+a.buttonType1{
+height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+a.buttonType1 span{
+background:url(../images/buttons/bn_buttonType1.png) 0 0 no-repeat;
+height:21px;
+text-decoration:none;
+float:left;
+cursor:pointer;
+}
+	a.buttonType1 span span, 
+	a.buttonType1 span:hover span{
+	background:url(../images/buttons/bn_buttonType1.png) 100% -40px no-repeat;
+	padding:0 16px;
+	height:21px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	}	
+a.buttonType1 span:hover{
+background-position:0px -80px;
+}
+
+/****************************************************************************************************************/
+/********** Button Type 2 ***************************************************************************************/	
+a.buttonType2{
+height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+a.buttonType2 span{
+background:url(../images/buttons/bn_buttonType2.png) 0 0 no-repeat;
+height:21px;
+text-decoration:none;
+float:left;
+cursor:pointer;
+}
+	a.buttonType2 span span, 
+	a.buttonType2 span:hover span{
+	background:url(../images/buttons/bn_buttonType2.png) 100% -40px no-repeat;
+	padding:0 16px;
+	height:21px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	}	
+a.buttonType2 span:hover{
+background-position:0px -80px;
+}
+
+	/*********** type 2 + uploadImage *************/
+	a.buttonType2.uploadImage span{
+	background-position:0 -120px;
+	}
+		a.buttonType2.uploadImage span span, 
+		a.buttonType2.uploadImage span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType2.uploadImage span:hover{
+	background-position:0px -160px;
+	}
+	
+	
+/****************************************************************************************************************/
+/********** Button Type 3 ***************************************************************************************/	
+a.buttonType3{
+height:20px;
+line-height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+	a.buttonType3 span{
+	background:url(../images/buttons/bn_buttonType3.png) 0 0 no-repeat;
+	height:20px;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	}
+		a.buttonType3 span span, 
+		a.buttonType3 span:hover span{
+		background:url(../images/buttons/bn_buttonType3.png) 100% -40px no-repeat;
+		padding:0 16px;
+		height:20px;
+		line-height:20px;
+		color:#5c4b4b;
+		font-weight:bold;
+		text-align:center;
+		}	
+	a.buttonType3 span:hover{
+	background-position:0px -80px;
+	}
+		a.buttonType3 span:hover span{
+		color:#198ca9;
+		}
+	
+/*********** type 3 + itemOpen *************/
+	a.buttonType3.itemOpen span{
+	background-position:0 -120px;
+	}
+		a.buttonType3.itemOpen span span, 
+		a.buttonType3.itemOpen span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemOpen span:hover{
+	background-position:0px -160px;
+	}
+		a.buttonType3.itemOpen span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + itemClose *************/
+	a.buttonType3.itemClose span{
+	background-position:0 -200px;
+	}
+		a.buttonType3.itemClose span span, 
+		a.buttonType3.itemClose span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemClose span:hover{
+	background-position:0px -240px;
+	}
+		a.buttonType3.itemClose span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + itemDelete *************/
+	a.buttonType3.itemDelete span{
+	background-position:0 -280px;
+	}
+		a.buttonType3.itemDelete span span, 
+		a.buttonType3.itemDelete span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemDelete span:hover{
+	background-position:0px -320px;
+	}
+		a.buttonType3.itemDelete span:hover span{
+		color:#c61700;
+		}
+/*********** type 3 + itemAdd *************/
+	a.buttonType3.itemAdd span{
+	background-position:0 -360px;
+	}
+		a.buttonType3.itemAdd span span, 
+		a.buttonType3.itemAdd span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemAdd span:hover{
+	background-position:0px -400px;
+	}
+		a.buttonType3.itemAdd span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + iconNegative *************/
+	a.buttonType3.iconNegative span{
+	background-position:0 -440px;
+	}
+		a.buttonType3.iconNegative span span, 
+		a.buttonType3.iconNegative span:hover span{
+		background-position:100% -40px;
+		padding-left:50px;
+		padding-right:45px;
+		color:#000;
+		}
+	a.buttonType3.iconNegative span:hover{
+	background-position:0px -480px;
+	}
+		a.buttonType3.iconNegative span:hover span{
+		color:#d21c00;
+		}
+/*********** type 3 + iconPositive *************/
+	a.buttonType3.iconPositive span{
+	background-position:0 -520px;
+	}
+		a.buttonType3.iconPositive span span, 
+		a.buttonType3.iconPositive span:hover span{
+		background-position:100% -40px;
+		padding-left:45px;
+		padding-right:40px;
+		color:#000;
+		}
+	a.buttonType3.iconPositive span:hover{
+	background-position:0px -560px;
+	}
+		a.buttonType3.iconPositive span:hover span{
+		color:#21b41f;
+		}
+/*********** type 3 + iconSearch *************/
+	a.buttonType3.iconSearch span{
+	background-position:0 -600px;
+	}
+		a.buttonType3.iconSearch span span, 
+		a.buttonType3.iconSearch span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		color:#5c4b4b;
+		}
+	a.buttonType3.iconSearch span:hover{
+	background-position:0px -640px;
+	}
+		a.buttonType3.iconSearch span:hover span{
+		color:#423636;
+		}
+/*********** type 3 + iconCalender *************/
+	a.buttonType3.iconCalender span{
+	background-position:0 -680px;
+	}
+		a.buttonType3.iconCalender span span, 
+		a.buttonType3.iconCalender span:hover span{
+		background-position:100% -720px;
+		padding-left:33px;
+		padding-right:23px;
+		color:#5c4b4b;
+		}
+	a.buttonType3.iconCalender span:hover{
+	background-position:0px -760px;
+	}
+		a.buttonType3.iconCalender span:hover span{
+		color:#423636;
+		}		
+/*********** type 3 + iconArrow *************/
+	a.buttonType3.iconArrow span{
+	background-position:0 -800px;
+	}
+		a.buttonType3.iconArrow span span, 
+		a.buttonType3.iconArrow span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		color:#333333;
+		}
+	a.buttonType3.iconArrow span:hover{
+	background-position:0px -840px;
+	}
+		a.buttonType3.iconArrow span:hover span{
+		color:#151515;
+		}
+/*********** type 3 + iconEmail *************/
+	a.buttonType3.iconEmail span{
+	background-position:0 -880px;
+	}
+		a.buttonType3.iconEmail span span, 
+		a.buttonType3.iconEmail span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		color:#333333;
+		}
+	a.buttonType3.iconEmail span:hover{
+	background-position:0px -920px;
+	}
+		a.buttonType3.iconEmail span:hover span{
+		color:#151515;
+		}
+
+/*********** type 3 + rotateCounterClockwise *************/
+	a.buttonType3.iconRotateCounterClockwise span{
+	background-position:0 -960px;
+	}
+		a.buttonType3.iconRotateCounterClockwise span span, 
+		a.buttonType3.iconRotateCounterClockwise span:hover span{
+		background-position:100% -40px;
+		padding-left:13px;
+		color:#333333;
+		}
+	a.buttonType3.iconRotateCounterClockwise span:hover{
+	background-position:0px -1000px;
+	}
+		a.buttonType3.iconRotateCounterClockwise span:hover span{
+		color:#151515;
+		}
+		
+/*********** type 3 + rotateClockwise *************/
+	a.buttonType3.iconRotateClockwise span{
+	background-position:0 -1040px;
+	}
+		a.buttonType3.iconRotateClockwise span span, 
+		a.buttonType3.iconRotateClockwise span:hover span{
+		background-position:100% -40px;
+		padding-left:13px;
+		color:#333333;
+		}
+	a.buttonType3.iconRotateClockwise span:hover{
+	background-position:0px -1080px;
+	}
+		a.buttonType3.iconRotateClockwise span:hover span{
+		color:#151515;
+		}
+
+/****************************************************************************************************************/
+/********** Button Type 4 ***************************************************************************************/	
+a.buttonType4{
+height:20px;
+line-height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+	a.buttonType4 span{
+	background:url(../images/buttons/bn_buttonType4_default.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_default.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	_*background:none!important;/*(IE6)*/
+	height:20px;
+	width:20px;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	}
+/*********** type 4 + iconEdit *************/	
+	a.buttonType4.iconEdit span{
+	background:url(../images/buttons/bn_buttonType4_iconEdit.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_iconEdit.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+/*********** type 4 + iconDelete *************/	
+	a.buttonType4.iconDelete span{
+	background:url(../images/buttons/bn_buttonType4_iconDelete.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_iconDelete.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+/*********** type 4 + iconUp *************/	
+	a.buttonType4.iconUp span{
+	background:url(../images/buttons/bn_buttonType4_iconUp.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_iconUp.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+/*********** type 4 + iconDown *************/	
+	a.buttonType4.iconDown span{
+	background:url(../images/buttons/bn_buttonType4_iconDown.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_iconDown.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+	
+	a.buttonType4.iconRecycle span{
+	background:url(../images/buttons/bn_buttonType4_iconRemRecyc.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonType4_iconRemRecyc.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+	
+
+/****************************************************************************************************************/
+/********** Button Type X (close window [X]) ********************************************************************/	
+a.buttonTypeX{
+width:38px;
+height:30px;
+background:url(../images/buttons/bn_buttonTypeX.png) no-repeat;
+_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/themes/default/images/buttons/bn_buttonTypeX.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+_*background:url(none);/*(IE6)*/
+float:right;
+cursor:pointer;
+}
+
+
+
+a.buttonType3.iconPositive.disabledButton {
+	opacity: 0.5;
+	_*filter: alpha(opacity=50);
+}
+	a.buttonType3.iconPositive.disabledButton span:hover span {
+		color: #000000;
+	}
+
+/****************************************************************************************************************/	
+/********** Messages, Errors ... ********************************************************************************/	
+/****************************************************************************************************************/
+.statusMessage.error{
+background:#fffcd4;
+border:1px solid #e5e5e5;
+margin-bottom:19px;
+}
+	.statusMessage.error p{
+	background:url(../images/graphics/gx_statusMessage_error.png) 0 0 no-repeat;
+	padding:4px 6px;
+	padding-left:25px;
+	left:-7px;
+	position:relative;
+	}
+.statusMessage.correct{
+background:#f0ffd8;
+border:1px solid #fff;
+margin-bottom:19px;
+}
+	.statusMessage.correct p{
+	background:transparent url(../images/graphics/gx_statusMessage_correct.png) 0 0 no-repeat;
+	padding:4px 6px;
+	padding-left:25px;
+	left:-7px;
+	position:relative;
+	}
+	
+	
+
+/****************************************************************************************************************/	
+/********** mContent module (Bredde til rådighed: 695px) ********************************************************/	
+/****************************************************************************************************************/
+.mContentDefault{
+width:100%;
+}
+
+/********** mContent Tab Navigation *****************************************************************************/
+	.mContentDefault .tabNavigation{
+	width:100%;
+	margin-bottom:-3px;
+	position:relative;
+	padding-bottom:2px;
+	background:url(../images/backgrounds/bg_mContentDefaultTabNavigation.png) 0 100% no-repeat;
+	}
+		.mContentDefault .tabNavigation ul{
+		list-style:none;
+		width:100%;
+		height:21px;
+		}
+			.mContentDefault .tabNavigation ul li{
+			float:left;
+			padding-right:2px;
+			margin-right:2px;
+			height:21px;
+			background-image:url(../images/graphics/gx_mContentDefaultTabNavigation.png);
+			background-position:100% -40px;
+			background-repeat:no-repeat;
+			}
+				.mContentDefault .tabNavigation ul li a{
+				padding:0 20px 0 22px;
+				float:left;
+				height:17px;
+				padding-top:4px;
+				line-height:15px;
+				background-image:url(../images/graphics/gx_mContentDefaultTabNavigation.png);
+				background-position:0 0;
+				background-repeat:no-repeat;
+				text-decoration:none;
+				}
+			.mContentDefault .tabNavigation ul li:hover{
+			background-position:100% -120px;
+			}
+				.mContentDefault .tabNavigation ul li:hover a{
+				background-position:0 -80px;
+				}
+			.mContentDefault .tabNavigation ul li.active, 
+			.mContentDefault .tabNavigation ul li.active:hover{
+			background-position:100% -200px;
+			}
+				.mContentDefault .tabNavigation ul li.active a, 
+				.mContentDefault .tabNavigation ul li.active:hover a{
+				background-position:0 -160px;
+				}
+
+/********** mContent module background styling ******************************************************************/			
+	.mContentDefault .moduleTop{
+	width:94%;
+	float:left;
+	padding-left:1%;
+	height:13px;
+	font-size:0;/*(IE6)*/
+	background:url(../images/backgrounds/bg_mContentDefaultTop.png) no-repeat;
+	}
+		.mContentDefault .moduleTopInner{
+		width:104%;
+		margin-right:-5%;
+		position:relative;/*(IE6)*/
+		padding-right:1%;
+		height:13px;
+		font-size:0;/*(IE6)*/
+		background:url(../images/backgrounds/bg_mContentDefaultTop.png) 100% 0 no-repeat;
+		}
+	.mContentDefault .moduleMiddle{
+	width:94%;
+	clear:both;
+	padding-left:1%;
+	padding-right:0;
+	background:url(../images/backgrounds/bg_mContentDefaultMiddle.png) repeat-y;
+	}
+		.mContentDefault .moduleMiddleInner{
+		width:104%;
+		margin-right:-5%;
+		position:relative;/*(IE6)*/
+		
+		padding-left:0;
+		padding-right:1%;
+		background:url(../images/backgrounds/bg_mContentDefaultMiddle.png) 100% 0 repeat-y;
+		/*overflow:hidden;*/ /*Datepicker skjules hvis overflow hidden bruges*/ /*(FF)*/
+		}
+	.mContentDefault .moduleBottom{
+	width:94%;
+	padding-left:1%;
+	clear:both;
+	height:10px;
+	font-size:0;/*(IE6)*/
+	background:url(../images/backgrounds/bg_mContentDefaultBottom.png) no-repeat;
+	}
+		.mContentDefault .moduleBottomInner{
+		width:104%;
+		margin-right:-5%;
+		position:relative;/*(IE6)*/
+		_z-index:-1; /*(IE)*/
+		padding-right:1%;
+		height:13px;
+		font-size:0;/*(IE6)*/
+		background:url(../images/backgrounds/bg_mContentDefaultBottom.png) 100% 0 no-repeat;
+		}
+		
+/********** mContent action button row ( top & bottom) **********************************************************/
+/********** mContent content item row ***************************************************************************/	
+.mContentDefault .actionButtonsRow{
+width:98%;
+clear:both;
+min-height:20px;/*(Mozilla)*/
+padding-bottom:18px;
+padding-top:9px;
+}
+	.mContentDefault .actionButtonsRow ul{
+	list-style:none;
+	clear:both;
+	}
+		.mContentDefault .actionButtonsRow ul li{
+		float:left;
+		margin-left:6px;
+		}
+		.mContentDefault .actionButtonsRow ul li.positionRight{
+		float:right;
+		}
+			.mContentDefault .actionButtonsRow ul li input.checkbox{
+			margin-top:3px;
+			*margin-top:0;/*(IE)*/
+			_*left:-6px;/*(IE6)*/
+			_*position:relative;/*(IE6)*/
+			margin-right:5px;/*(Mozilla)*/
+			*margin-right:2px;/*(IE7)*/
+			_*margin-right:-4px;/*(IE6)*/
+			}
+
+/********** mContent content item row ***************************************************************************/	
+.mContentDefault .contentItemRow{
+width:98.5%;
+overflow:hidden;
+padding-left:5px;
+clear:both;
+margin-bottom:11px;
+border:1px solid #dcdcdc;
+background:#f1f1f1 url(../images/backgrounds/bg_mContentDefaultContentItemRow.png) repeat-x;
+}
+
+.moveable{
+	cursor: move;
+}
+
+	.mContentDefault .contentItemRow .itemHeader{
+	width:100%;
+	clear:both;
+	height:28px;
+	}
+		.mContentDefault .contentItemRow .itemHeader ul{
+		list-style:none;
+		clear:both;
+		padding-top:3px;
+		}
+			.mContentDefault .contentItemRow .itemHeader li{
+			float:left;
+			}
+			.mContentDefault .contentItemRow .itemHeader li.positionRight{
+			float:right;
+			margin-left:20px;
+			padding-right:6px;
+			}
+				.mContentDefault .contentItemRow .itemHeader li input.checkbox{
+				margin-top:3px;
+				*margin-top:0;/*(IE)*/
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6{
+				font-weight:bold;
+				color:#3f4041;
+				text-decoration:underline;
+				cursor:pointer;
+				padding:3px 10px 0 13px;
+				margin-left:10px;
+				background:url(../images/icons/ic_arrowType1.png) 0px 0px no-repeat;
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6.active{
+				background:url(../images/icons/ic_arrowType1.png) 0px -40px no-repeat;
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6:hover{
+				text-decoration:none;
+				}
+				.mContentDefault .contentItemRow .itemHeader li label{
+				color:#767676;
+				}
+					.mContentDefault .contentItemRow .itemHeader li label span{
+					color:#646464;/*default color*/
+					}
+				.mContentDefault .contentItemRow .itemHeader li select{
+				}
+					.mContentDefault .contentItemRow .itemHeader li select option{
+					}
+	.mContentDefault .contentItemRow .itemContent{
+	width:99.5%;
+	overflow:hidden;
+	clear:both;
+	}
+		/*.mContentDefault .contentItemRow .itemContent table.moduleElementRow{
+		margin:9px 10px 3px 10px;
+		position:relative;
+		}
+				.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td{
+				padding-right:20px;
+				}
+				.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td.column1{
+				width:100px;
+				padding-right:0;
+				}
+					.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td.column1 label{
+					width:90px;
+					}
+					*/
+		
+
+
+
+					
+									
+/****************************************************************************************************************/	
+/********** mListView module (Part of mContentDefault) **********************************************************/	
+/****************************************************************************************************************/		
+
+.buttonTableRelease {
+	background: transparent url(../images/buttons/bn_actionMenu.png) no-repeat scroll 0 -80px;
+	height: 26px;
+	line-height: 21px;
+	color:#FFFFFF;
+}
+.buttonTableRelease span{
+	background-position: 8px -399px;
+	background-image:url(../images/icons/ic_actionMenuItems.png);
+	background-repeat:no-repeat;
+	padding:1px 10px 2px 34px;
+}
+
+.mListView{
+width:99.5%;
+overflow:hidden;
+}
+	.mListView h6{
+	line-height:28px;
+	font-weight:bold;
+	padding:0 12px;
+	border:1px solid #dcdcdc;
+	background:#fdfdfd url(../images/backgrounds/bg_mHeader.png) repeat-x;
+	}
+	.mListView table{
+	width:100%;
+	margin:8px 0;
+	}
+		.mListView table th{
+		padding:1px 12px 5px 12px;
+		font-weight:bold;
+		color:#198ca9;
+		}
+		.mListView table tr.link td{
+		background: #f5f5f5;
+		cursor:pointer;
+		}
+		.mListView table td{
+		padding:1px 13px;
+		cursor:default;
+		background-color:#f5f5f5;
+		}
+		.mListView table tr.even td{
+			background-color:transparent;
+		}
+		.mListView table tr.error td{
+			background:#af1900;
+			color:#ffffff;
+		}
+		
+		.mListView table td.graphCell{
+			width:480px;
+			padding:1px 3px 1px 25px;
+		}
+		.mListView table td div.graphLine{
+			background:url(../images/graphics/gx_graphLine.png) repeat-x;
+			width:0%;
+			height:10px;
+			line-height:0;
+			font-size:0;
+		}
+		
+		.mListView table tr.link:hover td{
+			background: #bfe9f3;
+		}
+		.mListView table tr.link td.arrow {
+			padding-left: 3px
+		}
+		.mListView table tr.link td.arrow span {
+			background: url(../images/icons/ic_arrowType1.png) no-repeat scroll 0 -3px;
+			padding-left: 12px;
+		}
+		
+		
+		.mListView table tr.linkOpen td .arrow,
+		.mListView table tr.linkOpen:hover td  .arrow{
+		background-position: 0 -40px;
+		}
+		
+			.mListView table td strong{
+			text-decoration:underline;
+			}
+			.mListView table td a{
+			text-decoration:none;
+			}
+			.mListView table td a:hover{
+			text-decoration:underline;
+			}
+			.mListView table td ul.buttons{
+			list-style:none;
+			float:right;
+			white-space: nowrap;
+			height:20px;
+			width: 60px;
+			}
+				.mListView table td ul.buttons li{
+				float:left;
+				padding-left:10px;
+				}
+
+				
+				
+				
+				
+				
+				
+				
+				
+/****************************************************************************************************************/	
+/********** mGraphView module (Part of mContentDefault) **********************************************************/	
+/****************************************************************************************************************/		
+
+.mGraphView{
+width:99.5%;
+overflow:hidden;
+}
+	.mGraphView h6{
+	line-height:28px;
+	font-weight:bold;
+	padding:0 12px;
+	border:1px solid #dcdcdc;
+	background:#fdfdfd url(../images/backgrounds/bg_mHeader.png) repeat-x;
+	}
+	.mGraphView table{
+	width:100%;
+	margin:4px 0 12px 0;
+	}
+		.mGraphView table th{
+		padding:1px 12px 5px 12px;
+		font-weight:bold;
+		color:#198ca9;
+		}
+		.mGraphView table th.dateCell{
+		}
+		.mGraphView table th.numeralCell{
+		text-align:right;
+		padding-right:20px;
+		}
+		.mGraphView table td{
+		padding-top:3px;
+		padding-bottom:3px;
+		cursor:default;
+		background:#f5f5f5;
+		}
+		.mGraphView table td.dateCell{
+		padding-left:12px;
+		}
+		.mGraphView table td.numeralCell{
+		text-align:right;
+		padding-right:35px;
+		}
+		.mGraphView table td.graphCell{
+		width:480px;
+		padding:1px 3px 1px 25px;
+		}
+		.mGraphView table td div.graphLine{
+		background:url(../images/graphics/gx_graphLine.png) repeat-x;
+		width:0%;
+		height:10px;
+		line-height:0;
+		font-size:0;
+		}
+		.mGraphView table tr.even td{
+		background:none;
+		}
+		.mGraphView table tr:hover td{
+		background:#bfe9f3;
+		}			
+				
+				
+				
+				
+/****************************************************************************************************************/	
+/********** mListNavigation module ******************************************************************************/	
+/****************************************************************************************************************/						
+.mListNavigation{
+text-align:center;
+cursor:default;
+margin-bottom:7px;
+}
+	.mListNavigation ul{
+	list-style:none;
+	}
+		.mListNavigation ul li{
+		display:inline;
+		padding:0 1px;
+		}
+			.mListNavigation ul li a{
+			padding:0 2px;
+			}
+			.mListNavigation ul li strong{
+			}
+
+
+
+
+
+
+			
+			
+/****************************************************************************************************************/	
+/********** mSearchBar module ******************************************************************************/	
+/****************************************************************************************************************/				
+.mSearchBar{
+height:22px;
+padding:4px 4px 3px 0;
+border:1px solid #dcdcdc;
+background:#fdfdfd url(../images/backgrounds/bg_mHeader.png) repeat-x;
+}
+	.mSearchBar ul{
+	list-style:none;
+	}
+		.mSearchBar ul li{
+		float:left;
+		padding-left:4px;
+		}				
+					
+					
+					
+					
+/****************************************************************************************************************/	
+/********** mPopupWindow module *********************************************************************************/	
+/****************************************************************************************************************/
+
+.mPopupWindow{
+position:absolute;top:200px;left:300px;
+width:567px;
+border:1px solid #6f6f6f;
+padding:3px;
+background:#fff;
+z-index:10;
+}
+	.mPopupWindow .windowHeader{
+	height:30px;
+	overflow:hidden;
+	background:url(../images/backgrounds/bg_popupWindowHeader.png) repeat-x;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	margin-bottom:-4px;
+	margin-right:-8px;
+	position:relative;
+	}
+		.mPopupWindow .windowHeader h5{
+		line-height:30px;
+		padding:0 11px;
+		color:#fff;
+		font-weight:bold;
+		cursor:default;
+		}
+		.mPopupWindow .windowHeader div.headerButton{
+		position:absolute;
+		width:38px;
+		height:30px;
+		top:0;
+		right:0;
+		}
+	.mPopupWindow .windowInner{
+	width:99.6%;
+	overflow:hidden;
+	border:1px solid #ededed;
+	border-top:none;
+	background:#f1f1f1 url(../images/backgrounds/bg_popupWindowInner.jpg) repeat-x;
+	}
+		.mPopupWindow .windowInner .windowInnerPadding{
+		padding:4% 1% 0 4%;
+		padding-bottom:0;
+		}
+
+		.mPopupWindow .windowInner table.moduleElementRow{
+		margin-bottom:20px;
+		position:relative;
+		}
+				.mPopupWindow .windowInner table.moduleElementRow tr td{
+				padding-right:15px;
+				padding-bottom:3px;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td select, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td input.text, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td label{
+				margin-right:5px;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td label{
+				color:#111;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td input.text, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td select{
+				margin-bottom:5px;
+				}
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+/****************************************************************************************************************/	
+/********** mPopupAlertBox module *********************************************************************************/	
+/****************************************************************************************************************/
+
+.mPopupAlertBox{
+position:absolute;top:300px;left:400px;
+width:346px;
+border:1px solid #6f6f6f;
+padding:3px;
+background:#fff;
+z-index:10;
+}
+	.mPopupAlertBox .alertBoxHeader{
+	height:30px;
+	overflow:hidden;
+	background:url(../images/backgrounds/bg_popupWindowHeader.png) repeat-x;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	margin-bottom:-4px;
+	margin-right:-8px;
+	position:relative;
+	}
+		.mPopupAlertBox .alertBoxHeader h5{
+		line-height:30px;
+		padding:0 11px;
+		color:#fff;
+		font-weight:bold;
+		cursor:default;
+		}
+		.mPopupAlertBox .alertBoxHeader div.headerButton{
+		position:absolute;
+		width:38px;
+		height:30px;
+		top:0;
+		right:0;
+		}
+	.mPopupAlertBox .alertBoxInner{
+	width:99.6%;
+	overflow:hidden;
+	border:1px solid #ededed;
+	border-top:none;
+	background:#f8f5e4 url(../images/backgrounds/bg_popupAlertBox.jpg) repeat-x;
+	}
+		.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding{
+		padding:10% 1% 0 4%;
+		padding-bottom:0;
+		}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding strong.alertMessage{
+			display:block;
+			text-align:center;
+			margin-bottom:30px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons{
+			list-style:none;
+			float:right;
+			padding-top:10px;
+			margin-bottom:15px;
+			position:relative;
+			left:-14px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons li{
+			float:left;
+			margin-right:6px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons li a{
+			
+			}
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/****************************************************************************************************************/	
+/********** mFrameFooter module *********************************************************************************/	
+/****************************************************************************************************************/			
+.virtFrameFooter{
+height:90px;
+width:100%;
+}
+					/*Ser ikke rigtigt ud i IE6 når modulerne foldes ud. 
+					  Løsningen kan være at mFrameFooter ikke positioneres absolute, men bare følger content, 
+					  hvilket dog ikke giver den samme visning hvis der er meget lidt content. 
+					  - mFrameFooter vil nemlig rykke sig op under sidste content element */
+.mFrameFooter{
+width:695px;
+height:90px;
+position:absolute;
+z-index:-1;
+left:0px;
+bottom:12px;
+cursor:default;
+}
+	.mFrameFooter h6{
+	padding:5px 12px;
+	background:url(../images/graphics/gx_frameFooter.png) 0 100% repeat-x;
+	font-weight:bold;
+	margin-bottom:2px;
+	}
+	.mFrameFooter table.footerInfo{
+	zoom:1;
+	}
+		.mFrameFooter table.footerInfo tr td{
+		padding:2px 12px;
+		color:#555;
+		}
+			.mFrameFooter table.footerInfo tr td strong{
+			color:#000;
+			}
+			.mFrameFooter table.footerInfo tr td a{
+			color:#555;
+			}
+			.mFrameFooter table.footerInfo tr td a:hover{
+			color:#777;
+			text-decoration:underline;
+			}
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/****************************************************************************************************************/	
+/********** mBoxItem module *************************************************************************************/	
+/****************************************************************************************************************/					
+.mBoxItem{
+width:337px;
+padding:0 3px 0 1px;
+background:url(../images/backgrounds/bg_mBoxItem.png) 0 50% repeat-y;
+position:relative;
+top:10px;
+margin-bottom:36px;
+}
+	.mBoxItem .boxItemHeader{
+	height:34px;
+	background:url(../images/backgrounds/bg_mBoxItem.png) 0 0 no-repeat;
+	position:relative;
+	top:-10px;
+	left:-1px;
+	margin-right:-3px;
+	}
+		.mBoxItem .boxItemHeader h6{
+		font-weight:bold;
+		height:34px;
+		line-height:34px;
+		padding:0 16px;
+		}
+	.mBoxItem table{
+	width:100%;
+	cursor:default;
+	}
+		.mBoxItem table th{
+		font-weight:bold;
+		color:#198ca9;
+		padding:1px 17px 5px 17px;
+		}
+			.mBoxItem table td{
+			padding:1px 17px;
+			}
+			.mBoxItem table .date {
+				padding-right: 7px;
+			}
+			.mBoxItem table tr:hover td, 
+			.mBoxItem table tr.hover td{
+			background:#bfe9f3;
+			}
+			.mBoxItem table tr.link:hover td{
+			cursor:pointer;
+			}
+			.mBoxItem .deleted tr:hover td {
+				background: transparent !important;
+				cursor: default !important;
+			}
+	.mBoxItem .boxItemFooter{
+	height:10px;
+	background:url(../images/backgrounds/bg_mBoxItem.png) 0 100% no-repeat;
+	position:relative;
+	top:10px;
+	left:-1px;
+	margin-right:-3px;
+	}
+
+
+	/* Frontpage top top variation */
+	.mBoxItemFrontpageTop {
+		width:697px;
+		background:url(../images/backgrounds/bg_mBoxItem_wide.png) 0 50% repeat-y;
+	}
+		.mBoxItemFrontpageTop .boxItemHeader{
+			background:url(../images/backgrounds/bg_mBoxItem_wide.png) 0 0 no-repeat;
+		}
+		.mBoxItemFrontpageTop .boxItemFooter{
+			background:url(../images/backgrounds/bg_mBoxItem_wide.png) 0 100% no-repeat;
+		}
+	
+			.mBoxItemFrontpageTop ul {
+				margin: 0;
+				padding: 0 0 0 30px;
+			}
+				.mBoxItemFrontpageTop li {
+					list-style: none;
+					margin: 0 20px 0 0;
+					padding: 0;
+					display: inline;
+				}
+		
+	
+	
+	
+	
+	
+	
+	
+/****************************************************************************************************************/	
+/********** mHeader module **************************************************************************************/	
+/****************************************************************************************************************/	
+.mHeader{
+width:99.5%;
+clear:both;
+margin:0 0 10px;
+}
+	.mHeader h6{
+	line-height:28px;
+	font-weight:bold;
+	padding: 0 9px;
+	border:1px solid #dcdcdc;
+	background:#fdfdfd url(../images/backgrounds/bg_mHeader.png) repeat-x;
+	}
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/****************************************************************************************************************/	
+/********** mFormularType1 module **************************************************************************************/	
+/****************************************************************************************************************/	
+
+.mFormularType1{
+padding-bottom:15px;
+}
+	.mFormularType1 table.formular{
+	margin-bottom:15px;
+	}
+		.mFormularType1 table.formular td{
+		padding:3px 5px 2px 5px;
+		}
+			.mFormularType1 table.formular td label{
+			}
+			.mFormularType1 table.formular td input.text{
+			}
+			.mFormularType1 table.formular td select{
+			width:100%;
+			}
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+/******************************************************************************************************************/	
+/********** mInfoText module **************************************************************************************/	
+/******************************************************************************************************************/					
+.mInfoText{
+margin:10px;
+padding:1px 10px 5px 23px;
+background:url(../images/icons/ic_mInfoText.png) no-repeat;
+}
+
+
+
+
+
+
+
+
+/******************************************************************************************************************/	
+/********** mCalenderPicker module ********************************************************************************/	
+/******************************************************************************************************************/	
+.mCalenderPicker{
+position:relative;
+float:left;
+top:-1px;
+_*top:-3px;
+left:4px;
+cursor:default;
+z-index:10;
+}
+	.mCalenderPicker div.positionAbsolute{
+	left:0;
+	width:222px;
+	}
+		.tableWrapper{
+		width:226px;
+			min-height:228px;
+			_*height:228px;
+		background:#e6e4e4 url(../images/backgrounds/bg_mCalenderPicker.png) repeat-x;
+		position:absolute;
+		top:0;
+		left:0;
+		border:1px solid #dcdcdc;
+		z-index:10;
+		}
+			.mCalenderPicker *{
+			font:11px Arial, Helvetica, Verdana, sans-serif;
+			}
+			.mCalenderPicker table.top{
+			width:100%;
+			height:28px;
+			}
+				.mCalenderPicker table.top td{
+				vertical-align:middle;
+				text-align:center;
+				color:#000;
+				}
+				.mCalenderPicker table.top td.previous{
+				}
+					.mCalenderPicker table.top td.previous a{
+					background:url(../images/buttons/bn_calenderPickerHeader.png) 0 0 no-repeat;
+					float:left;
+					display:block;
+					width:35px;
+					height:28px;
+					text-indent:-4444px;
+					}
+				.mCalenderPicker table.top td.previous{
+				}
+					.mCalenderPicker table.top td.next a{
+					background:url(../images/buttons/bn_calenderPickerHeader.png) 100% 0 no-repeat;
+					float:right;
+					width:35px;
+					height:28px;
+					text-indent:-4444px;
+					}
+				.mCalenderPicker table.header{
+				width:216px;
+				border:1px solid #dcdcdc;
+				height:19px;
+				background:#fff;
+				margin:5px 5px 0 5px;
+				}
+					.mCalenderPicker table.header th{
+					text-align:center;
+					padding:0;
+					padding-right:4px;
+					}
+					.mCalenderPicker table.header th.column1{
+					padding-left:4px;
+					}
+						.mCalenderPicker table.header th span{
+						color:#5c4b4b;
+						width:20px;
+						text-align:center;
+						display:block;
+						}
+							.mCalenderPicker table.header th.column1 span{
+							color:#39a4bf;
+							width:29px;
+							text-align:center;
+							display:block;
+							}
+				.mCalenderPicker table.middle{
+				width:206px;
+				margin:0 10px 0 10px;
+				}
+					.mCalenderPicker table.middle td{
+					text-align:center;
+					border:1px solid #fff;
+					border-top:none;
+					vertical-align:middle;
+					padding:0;
+					}
+						.mCalenderPicker table.middle td a{
+						display:block;
+						text-align:center;
+						width:24px;
+						height:20px;
+						line-height:20px;
+						text-decoration:none;
+						color:#5c4b4b;
+						}
+						.mCalenderPicker table.middle td a:hover{
+						background:#e3ecef;
+						color:#4a3c3c;
+						}
+						.mCalenderPicker table.middle td a.active{
+						background:#c4e9f2;
+						color:#000;
+						}
+					.mCalenderPicker table.middle td.column1{
+					}
+						.mCalenderPicker table.middle td.column1 span{
+						display:block;
+						text-align:center;
+						width:29px;
+						height:20px;
+						line-height:20px;
+						color:#39a4bf;
+						}
+		
+					.mCalenderPicker table.bottom{
+					width:206px;
+					margin:8px 10px 0 10px;
+					}
+						.mCalenderPicker table.bottom td{
+						padding:0;
+						}
+						.mCalenderPicker table.bottom .column1{
+						width:128px;
+						}
+						.mCalenderPicker table.bottom .column2{
+						width:24px;
+						}
+						.mCalenderPicker table.bottom .column3{
+						width:12px;
+						}
+						.mCalenderPicker table.bottom .column4{
+						width:4px;
+						padding-left:2px;
+						}
+						.mCalenderPicker table.bottom .column5{
+						width:24px;
+						}
+						.mCalenderPicker table.bottom .column6{
+						width:12px;
+						}
+							.mCalenderPicker table.bottom td input.text{
+							width:16px;
+							font-size:11px;
+							text-align:right;
+							border:1px solid #dedede;
+							padding:2px 4px 1px 2px;
+							}
+							.mCalenderPicker table.bottom td .previous{
+							width:12px;
+							height:8px;
+							font-size:1px;/*(IE6)*/
+							display:block;
+							cursor:pointer;
+							background:url(../images/buttons/bn_calenderPickerBottom.png) 0 0 no-repeat;
+							}
+							.mCalenderPicker table.bottom td .next{
+							width:12px;
+							height:9px;
+							font-size:1px;/*(IE6)*/
+							display:block;
+							cursor:pointer;
+							background:url(../images/buttons/bn_calenderPickerBottom.png) 0 100% no-repeat;
+							}
+							.mCalenderPicker table.bottom td .button{
+							float:right;
+							margin-top:12px;
+							margin-bottom:8px;
+							}
+		
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************************************/	
+/********** mCtrlModules module ***********************************************************************************/	
+/******************************************************************************************************************/
+.mCtrlModules{
+width:100%;
+overflow:hidden;
+}
+	.mCtrlModules ul.items{
+	width:100%;
+	list-style:none;
+	margin:0;
+	}
+		.mCtrlModules ul.items li.item{
+		float:left;
+		width:144px;
+		height:176px;
+		margin-right:31px;
+		margin-bottom:33px;
+		background:url(../images/backgrounds/bg_mCtrlModulesItem.png) no-repeat;
+		}
+			.mCtrlModules ul.items li.item .icon{
+			width:126px;
+			height:97px;
+			position:relative;
+			top:8px;
+			left:8px;
+			}
+			.mCtrlModules ul.items li.item ul{
+			width:125px;
+			height:50px;
+			overflow:hidden;
+			list-style:none;
+			margin:0;
+			position:relative;
+			top:16px;
+			left:12px;
+			}
+				.mCtrlModules ul.items li.item ul li{
+				line-height:16px;
+				}
+					.mCtrlModules ul.items li.item ul li strong{
+					line-height:18px;
+					}
+			/* Icon types */
+			.mCtrlModules .iconType1{background-image:url(../images/icons/ic_mCtrlModulesType1.png);}
+			.mCtrlModules .iconType2{background-image:url(../images/icons/ic_mCtrlModulesType2.png);}
+			.mCtrlModules .iconType3{background-image:url(../images/icons/ic_mCtrlModulesType3.png);}
+			.mCtrlModules .iconType4{background-image:url(../images/icons/ic_mCtrlModulesType4.png);}
+			.mCtrlModules .iconType5{background-image:url(../images/icons/ic_mCtrlModulesType5.png);}
+			.mCtrlModules .iconType6{background-image:url(../images/icons/ic_mCtrlModulesType6.png);}
+
+
+
+
+
+
+			
+			
+			
+/******************************************************************************************************************/	
+/********** moduleElementRow (html from Tuksi3) *******************************************************************/	
+/******************************************************************************************************************/		
+table.moduleElementRow{
+margin:9px 10px 3px 10px;
+position:relative;
+}
+	table.moduleElementRowFullWidth {
+		width: 100%;
+	}
+	table.moduleElementRow tr td{
+	padding:3px 20px 5px 0;
+	vertical-align:top;
+	color:#444;
+	}
+	table.moduleElementRow tr td.column1{
+	width:100px;
+	padding-right:0;
+		}
+		table.moduleElementRow tr td.column1 label{
+		width:90px;
+		}
+		table.moduleElementRow tr .leftLabel{
+		width:75px;
+		display:block;
+		padding-left:5px;
+		color:#07809e;
+		}
+		table.moduleElementRow tr .labelLightTop{
+		color:#444;
+		font-weight: bold;
+		}
+		table.moduleElementRow tr .labelLightLeft{
+		width:75px;
+		display:block;
+		padding-left:5px;
+		color:#444;
+		}
+		.moduleElementRow td select{
+		width:230px;
+		}
+		.moduleElementRow td select.smallSelect{
+		width:100px;
+		}
+		.moduleElementRow td input.text{
+		width:400px;
+		padding-left:2px;
+		}
+		.moduleElementRow td input.text.smallInput{
+		width:94px;
+		padding-left:2px;
+		}
+		.moduleElementRow td input.text.mediumInput{
+		width:230px;
+		padding-left:2px;
+		}
+		.moduleElementRow td textarea{
+		width:396px;
+		padding-left:2px;
+		}
+		.moduleElementRow td textarea.smallInput{
+		width:90px;
+		padding-left:2px;
+		}
+		.moduleElementRow td textarea.mediumInput{
+		width:226px;
+		padding-left:2px;
+		}
+		.moduleElementRow td input.checkbox{
+		}
+		
+		table.moduleElementRow td i{
+		color:#444;
+		}
+		table.moduleElementRow td h2{
+		width:93%;
+		margin-top:10px;
+		position:relative;
+		line-height:28px;
+		font-weight:bold;
+		padding:0 12px;
+		border:1px solid #dcdcdc;
+		background:#fdfdfd url(../images/backgrounds/bg_mHeader.png) repeat-x;
+		}
+
+		table.moduleElementRow td .up_arrow_spacer{/*TEMP*/
+		padding:5px 6px;
+		line-height:0;
+		font-size:0;
+		}
+		
+	
+.chooseAreaForModule a.buttonType3.itemDelete span {
+	float: right;
+}
+
+.emailAdrList {
+	
+}
+
+.emailAdrList th {
+	color: #198CA9;
+	font-weight: bold;
+	padding: 2px 30px 2px 4px !important;
+	text-align: center;
+}
+.emailAdrList td {
+	background-color: #F5F5F5;
+	padding: 4px 30px 2px 4px !important;
+	text-align: center;
+}
+	.emailAdrList .deleted {
+		
+	}
+	.emailAdrList .deleted,
+	.emailAdrList .remove {
+		vertical-align: middle;
+	}
+	.emailAdrList .date {
+	}
+	.emailAdrList .remove {
+		padding-right: 4px !important;
+	}
+	.emailAdrList .even td {
+		background-color: transparent;
+	}
+		.emailAdrList td .formcheckbox {
+			vertical-align: middle;
+		}
+
+/* image cropper styles */
+.imageCropperHead {
+	height: 30px;
+}
+.imageCropperInfoRight {
+	float: right;
+	width: 220px;
+}
+	.imageCropperInfo strong {
+		color: #198CA9;
+	}
+	.imageCropperInfo ul {
+		margin: 10px 0;
+		padding: 0;
+	}
+		.imageCropperInfo li {
+			list-style: none;
+			margin: 0;
+			padding: 1px 4px;
+			overflow: hidden;
+		}
+			.imageCropperInfo .odd {
+				background: #F5F5F5;
+			}
+			.imageCropperInfo li label {
+				float: left;
+				margin: 0;
+				width: 100px;
+			}
+			
+/* style for the ajax arrange item popup */
+#itemarrange{
+	margin:0;
+	padding:0;
+	text-align:left;
+	border:1px solid gray;
+}
+	#itemarrange li{
+		list-style:none;
+		margin:0;
+		padding:0;
+		cursor:n-resize;
+	}
+		#itemarrange li:hover{
+			background:#d5d5d5;
+		}
+
+#modulearrange{
+	margin:0;
+	padding:1px;
+	text-align:left;
+	border:1px solid gray;
+	min-height: 60px;
+}
+	#modulearrange li{
+		list-style:none;
+		margin:0;
+		padding:0;
+		color: gray;
+		position: static;
+	}
+	#modulearrange .moveable {
+		color: black;
+	}
+	#modulearrange .moveable:hover{
+		cursor:n-resize;
+		background:#d5d5d5;
+		}
+		
+.mExpand {
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	float: left;
+	
+}
+
+.mExpand img {
+	margin-top: 11px;
+	margin-left: -6px;
+}

@@ -1,0 +1,724 @@
+/* Tuksi 4.0 Backend - Stylesheet */
+/* RPE 02.10.2007 */
+
+/*Hacks info: 
+Ud for styles som udelukkende er tiføjet for at tilfredsstille eksempelvis en bestemt version af Internet Explorer, 
+skrives en kommentar som denne:  "(IE6)", "(FF1.5)", "(FF2)" eller "(SF2)" osv. 
+Der skal så vidt muligt forsøges at undgå hacks, som på nuværende tidspunkt kun rammer en bestemt browser. 
+Eks. " _* " (Underscore Stjerne). Brug i stedet styles som løses at alle browsere, men kun påvirkes at eksempelvis IE.
+Dette er for at fremtidssikre css-laget mod kommende browsere.
+*/
+
+
+/* template elements */
+body{
+overflow:visible;
+}
+.main{
+/*_*width: expression(document.body.clientWidth < 997? "995px" : "auto");*/
+}
+.main{
+overflow:hidden;
+text-align:left;
+position:relative;
+/*min-width:995px;*/
+border:0;
+}
+
+
+
+
+
+
+
+
+/****************************************************************************************************************/	
+/********** Login Function **************************************************************************************/	
+/****************************************************************************************************************/
+body.login{
+background:#1f1f1f url(../images/backgrounds/bg_body.jpg) repeat-x;
+}	
+.mainLogin{
+width:1px;
+height:1px;
+overflow:visible;
+position:absolute;
+top:40%;
+left:50%;
+}
+	.mainLogin .loginBox{
+	width:416px;
+	position:absolute;
+	left:-210px;
+	top:-147px;
+	border-width:3px 4px 4px;
+	border-color:#fff;
+	border-style:solid;
+	background:#f1f1f1 url(../images/backgrounds/bg_loginBox.png) 0 0 repeat-x;
+	text-align:left;
+	}
+		.mainLogin .loginBox .loginHeader{
+		width:416px;
+		height:71px;
+		position:relative;
+		}
+			.mainLogin .loginBox .loginHeader a{
+			float:left;
+			position:absolute;
+			top:20px;
+			left:19px;
+			}
+				.mainLogin .loginBox .loginHeader a img{
+				}
+		.mainLogin .loginBox .loginContent{
+		width:367px;	
+		padding:24px 22px 12px 25px;
+		border:1px solid #ededed;
+		}
+			.mainLogin .loginBox .loginContent table{
+			}
+				.mainLogin .loginBox .loginContent table th{
+				font-weight:bold;
+				padding-bottom:20px;
+				}
+					.mainLogin .loginBox .loginContent table th em.loginError{
+					color:#ed1c24;
+					font-weight:normal;
+					}
+				.mainLogin .loginBox .loginContent table td{
+				padding-bottom:8px;
+				}
+				.mainLogin .loginBox .loginContent table .column1{
+				padding-right:25px;
+				}
+				.mainLogin .loginBox .loginContent table .column2{
+				text-align:right;
+				}
+					.mainLogin .loginBox .loginContent table .column1 label{
+					}
+					.mainLogin .loginBox .loginContent table .column2 input.text, 
+					.mainLogin .loginBox .loginContent table .column2 input.password{
+					width:263px;
+					border:1px solid #9c9c9c;
+					padding:1px;
+					}
+						.mainLogin .loginBox .loginContent table .column2 div.loginError input{
+						border:2px solid #ed1c24;
+						padding:0;
+						}
+					.mainLogin .loginBox .loginContent table .column2 input.checkbox{
+					float:left;
+					position:relative;
+					*left:-4px;/*(IE)*/
+					}
+					.mainLogin .loginBox .loginContent table .column1 ul{
+					list-style:none;
+					margin:20px -60px 0 0;
+					}
+						.mainLogin .loginBox .loginContent table .column1 ul li{
+						margin-top:3px;
+						}
+							.mainLogin .loginBox .loginContent table .column1 ul li a:hover{
+							color:#198ca9;
+							}
+					.mainLogin .loginBox .loginContent a.buttonType3{
+					float:right;
+					}
+							.mainLogin .loginBox .loginContent a.buttonType3 span span, 
+							.mainLogin .loginBox .loginContent a.buttonType3 span:hover span{
+							padding-left:50px;
+							padding-right:50px;
+							}
+
+				/*PassHelp justeringer*/
+				.mainLogin .loginBox .passHelp table th h5{
+				display:inline;
+				padding-right:10px;
+				}
+				.mainLogin .loginBox .passHelp table .column1{
+				padding-right:10px;
+				}
+		/*loginHelp BoxPopOut*/											
+		.mainLogin .loginBox .loginHelp{
+		position:relative;
+		left:0;
+		clear:both;
+		height:1px;
+		line-height:1px;
+		font-size:1px;
+		}
+			.mainLogin .loginBox .loginHelp .helpContent{
+			width:373px;
+			height:auto;
+			line-height:14px;
+			font-size:11px;
+			position:absolute;
+			border-width:1px 2px 2px 2px;
+			border-color:#fff;
+			border-style:solid;
+			padding:17px 20px 20px 20px;
+			text-indent:22px;
+			top:0;
+			left:0;
+			background:#e2e2e2 url(../images/icons/ic_icon-info.png) 20px 17px no-repeat;
+			}
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+
+/****************************************************************************************************************/	
+/********** Main Header *****************************************************************************************/	
+/****************************************************************************************************************/	
+.mainHeader{
+position:relative;
+background:#383838 url(../images/backgrounds/bg_mainHeader.png) repeat-x;
+height:89px;
+}
+	.mainHeader a.TuksiLogo{
+	float:left;
+	position:absolute;
+	top:11px;
+	left:12px;
+	}
+		.mainHeader a.TuksiLogo img{
+		}
+	
+
+/********** Header Login info & Control button ******************************************************************/		
+	.mainHeader .headerInfo{
+	float:right;
+	height:28px;
+	padding-right:195px;
+	position:relative;
+	margin-right:1px;
+	background:url(../images/backgrounds/bg_headerInfo.png) 0px 0px repeat-x;
+	}
+		.mainHeader .headerInfo span{
+		padding-right:9px;
+		padding-left:8px;
+		color:#cbcbcb;
+		white-space:nowrap;
+		}
+			.mainHeader .headerInfo span a{
+			color:#cbcbcb;
+			white-space:nowrap;
+			}
+		.mainHeader .headerInfo img{
+		margin-bottom:-3px;
+		}
+		.mainHeader .headerInfo a.cButton{
+		position:absolute;
+		right:20px;
+		top:0;
+		width:105px;
+		height:29px;
+		background:#696968 url(../images/buttons/bn_controlPanel.png) 0 0 no-repeat;
+		text-align:center;
+		line-height:25px;
+		color:#fff;
+		font-weight:bold;
+		text-decoration:none;
+		}
+		.mainHeader .headerInfo a:hover{
+		background-position:0 -40px;
+		}
+		
+
+/********** Header Tabs (navigation) ****************************************************************************/	
+		.main .headerTabs{
+		height:28px;
+		position:absolute;
+		top:61px;
+		left:0;
+		width:99%;
+		padding-left:2px;
+		background:url(../images/backgrounds/bg_headerTabsLine.png) 0px 100% repeat-x;
+		clear:both;/*(IE6)*/
+		}
+			.main .headerTabs ul{
+			list-style:none;
+			}
+				.main .headerTabs ul li{
+				float:left;
+				position:relative;
+				height:28px;
+				}
+					.main .headerTabs ul li a{
+					float:left;
+					height:28px;
+					line-height:27px;
+					text-align:center;
+					font-weight:bold;
+					color:#f7f7f7;
+					margin-right:1px;
+					background:url(../images/backgrounds/bg_headerTabs.png) 0px 0px repeat-x;
+					padding:0 22px;
+					text-decoration:none;
+					}
+					.main .headerTabs ul li a:hover{
+					background-position:0 -40px;
+					}
+					.main .headerTabs ul li a.active, 
+					.main .headerTabs ul li a.active:hover{
+					background:url(../images/backgrounds/bg_headerTabsActive.png) 100% 0px repeat-x;
+					margin-right:0;
+					color:#474747;
+					}
+
+
+					
+					
+		.main .headerTabs ul li div.headerTabDropdown{
+		display:none;
+		position:absolute;
+		top:27px;
+		left:-2px;
+		width:152px;
+		padding:0 2px 3px 2px;
+		z-index:1;
+		background:url(../images/backgrounds/bg_headerTabsShadow.png) 0 100% no-repeat;
+		}
+		 .headerTabs ul li:hover div.headerTabDropdown{
+		display:block;
+		border-top:none;
+		}			
+					
+		.main .headerTabs ul li ul{
+		width:100%;
+		position:relative;
+		top:0;
+		left:0;
+		}
+		
+			.main .headerTabs ul ul li{
+			background:#484848;
+			width:100%;
+			height:auto;
+			}
+			.main .headerTabs ul ul li:hover{
+			background:#636363;
+			}
+				.main .headerTabs ul ul li a{
+				width:96%;
+				padding:0 2%;
+				height:auto;
+				background:#484848 url(../images/backgrounds/bg_headerTabs.png) 0 -200px repeat-x;
+				line-height:14px;
+				text-align:left;
+				color:#dedede;
+				font-weight:normal;
+				}
+				.main .headerTabs ul ul li a:hover{
+				background:#636363 url(../images/backgrounds/bg_headerTabs.png) 0 -200px repeat-x;
+				}
+					.main .headerTabs ul ul li a span{
+					padding:4px 10px 4px 8px;
+					display:block;
+					background:url(../images/backgrounds/bg_headerTabs.png) 0 -120px repeat-x;
+					}
+					.main .headerTabs ul ul li a:hover span{
+					}
+
+		
+
+		
+/****************************************************************************************************************/	
+/********** Main Inner *******************************************************************************************/	
+/****************************************************************************************************************/	
+.mainInner{
+width:100%;
+position:relative;
+}
+
+
+/****************************************************************************************************************/	
+/********** Main Left *******************************************************************************************/	
+/****************************************************************************************************************/			
+.mainLeft{
+width:230px;
+float:left;
+position:relative;
+padding-bottom:40px;
+}
+
+/********** Left Menu *******************************************************************************************/	
+	.mainLeft .leftMenu{
+	}
+	.mainLeft .leftMenu ul{
+	}
+		.mainLeft .leftMenu ul li.home, 
+		.mainLeft .leftMenu ul li.home:hover{
+		}
+		.mainLeft .leftMenu ul li{
+		}	
+		.mainLeft .leftMenu ul li a{
+		}	
+		.mainLeft .leftMenu ul li a:hover{
+		}		
+		
+		
+		
+		
+		
+		
+		
+/****************************************************************************************************************/	
+/********** Main Right *******************************************************************************************/	
+/****************************************************************************************************************/		
+.mainRight{
+display:inline-block;/*(IE6)*/
+}	
+.mainRight{
+display:block;
+width:auto;
+float:none;
+margin-left:230px;
+position:relative;
+left:0px;
+top:0;
+
+background:url(../images/backgrounds/bg_mainRightCorner.png) right top no-repeat;
+}		
+	.mainRight .rightTop{
+	background:url(../images/backgrounds/bg_rightTop.png) 0px 0px repeat-x;
+	border-bottom:1px solid #81bece;
+	position:relative;
+	}
+		.mainRight .rightTop .virtTopTabsMenu{
+		height:41px;
+		}
+		.mainRight .rightTop .virtTopActionButtons{
+		height:44px;
+		}
+		.mainRight .rightTop .breadcrumbs{
+		color:#000;
+		font-size:11px;
+		padding:20px 10px 15px 0;
+		position:relative;
+		left:33px;
+		}	
+		.mainRight .rightTop .breadcrumbs a{
+		}
+		.mainRight .rightTop .breadcrumbs strong{
+		padding-right:5px;
+		}
+		.mainRight .rightTop .breadcrumbs a:hover{
+		}
+		.mainRight .rightTop .breadcrumbs span{
+		font:normal 10px arial, Helvetica, sans-serif;
+		padding:0 3px;
+		}	
+
+
+
+		
+/********** Right Top Action Buttons ****************************************************************************/		
+.topActionButtons{
+height:23px;
+padding-right:78px;
+position:absolute;
+top:61px;
+left:27px;
+}	
+	.topActionButtons ul.ul{
+	list-style:none;
+	}	
+		.topActionButtons ul li.li{
+		float:left;
+		padding:0 3px;
+		}
+		
+		.topActionButtons ul li.actionMenuPosition{
+		padding:0 13px;
+		}
+
+		
+			ul.actionMenu{
+			position:relative;
+			list-style:none;
+			float:left;
+			width:136px; /*Bredden kan sættes her, evt. defineres inline?*/
+			}
+				ul.actionMenu li{
+				height:23px;
+				background:url(../images/buttons/bn_actionMenu.png) 0 0 no-repeat;
+				float:left;
+				width:100%;
+				}
+					ul.actionMenu li a{
+					background:url(../images/buttons/bn_actionMenu.png) 100% -40px no-repeat;
+					text-decoration:none;
+					color:#fff;
+					float:left;
+					height:23px;
+					overflow:hidden;
+					line-height:21px;
+					width:100%;
+					}
+						ul.actionMenu li a span{
+						padding:0 35px 0 10px;
+						}
+					ul.actionMenu li ul{
+					display:none;
+					list-style:none;
+					position:relative;
+					top:-2px;
+					width:100%;
+					}
+					ul.actionMenu li:hover ul{
+					display:block;
+					}
+						ul.actionMenu li ul li{
+						background:url(../images/buttons/bn_actionMenu.png) 0 -80px no-repeat;
+						}
+						ul.actionMenu li ul li:hover{
+						background-position:0 -160px;
+						}
+							ul.actionMenu li ul li a{
+							background:url(../images/buttons/bn_actionMenu.png) 100% -120px no-repeat;
+							}
+							ul.actionMenu li ul li a:hover{
+							background-position:100% -200px;
+							}
+								ul.actionMenu li ul li a span{
+								padding:1px 10px 2px 34px;
+								background-image:url(../images/icons/ic_actionMenuItems.png);
+								background-repeat:no-repeat;
+								}
+								
+								/* normal/default icon */
+								ul.actionMenu li ul li a span.iconNormal{ 						background-position: 8px 1px;    }
+								ul.actionMenu li ul li a:hover span.iconNormal {			background-position: 8px -39px;  }
+								
+								/* copy page icon */
+								ul.actionMenu li ul li a span.iconCopyPage{ 					background-position: 8px 1px;    }
+								ul.actionMenu li ul li a:hover span.iconCopyPage{			background-position: 8px -39px;  }
+								
+								/* move page icon */
+								ul.actionMenu li ul li a span.iconMovePage{						background-position: 8px -239px; }
+								ul.actionMenu li ul li a:hover span.iconMovePage{			background-position: 8px -279px; }
+								
+								/* copy tab icon */
+								ul.actionMenu li ul li a span.iconCopyTab{						background-position: 8px -639px; }
+								ul.actionMenu li ul li a:hover span.iconCopyTab{			background-position: 8px -679px; }
+								
+								/* move tab icon */
+								ul.actionMenu li ul li a span.iconMoveTab{						background-position: 8px -719px; }
+								ul.actionMenu li ul li a:hover span.iconMoveTab{			background-position: 8px -759px; }
+								
+								/* delete page icon */
+								ul.actionMenu li ul li a span.iconDeletePage{					background-position: 8px -159px; }
+								ul.actionMenu li ul li a:hover span.iconDeletePage{		background-position: 8px -199px; }
+								
+								/* debug icon */
+								ul.actionMenu li ul li a span.iconDebug{							background-position: 8px -479px; }
+								ul.actionMenu li ul li a:hover span.iconDebug{				background-position: 8px -519px; }
+								
+								/* tree admin icon */
+								ul.actionMenu li ul li a span.iconTreeAdmin{					background-position: 8px -559px; }
+								ul.actionMenu li ul li a:hover span.iconTreeAdmin{		background-position: 8px -599px; }
+								
+								/* release page icon */
+								ul.actionMenu li ul li a span.iconReleasePage{				background-position: 8px -399px; }
+								ul.actionMenu li ul li a:hover span.iconReleasePage{	background-position: 8px -439px; }
+								
+								/* add page icon */
+								ul.actionMenu li ul li a span.iconAddPage{						background-position: 8px -319px; }
+								ul.actionMenu li ul li a:hover span.iconAddPage{			background-position: 8px -359px; }
+
+
+		/*Preview button position*/
+		.topActionButtons ul li.previewPosition{
+		float:right;
+		}
+
+		
+		
+
+
+
+
+
+
+/********** Right Top Tabs ****************************************************************************/			
+.mainRight .topTabsMenu{
+position:absolute;
+top:16px;
+right:2px;
+height:25px;
+/*overflow:hidden;*//*Hvis hidden, dropdown menuen vises ikke*/
+width:99.5%;
+}
+	.mainRight .topTabsMenu ul{
+	list-style:none;
+	float:right;
+	}
+		.mainRight .topTabsMenu ul li{
+		float:right;
+		height:25px;
+		background:url(../images/menu/gx_rightTopTabs.png) 0px 0px no-repeat;
+		}
+			.mainRight .topTabsMenu ul li a{
+			padding:0 13px;
+			text-align:center;
+			display:block;
+			float:left;
+			background:red;
+			height:25px;
+			line-height:23px;
+			text-decoration:none;
+			background:url(../images/menu/gx_rightTopTabs.png) 100% -40px no-repeat;
+			color:#4f4d4d;
+			}
+			.mainRight .topTabsMenu ul li a:hover{
+			color:#010101;
+			}
+			.mainRight .topTabsMenu ul li.active{
+			background-position:0px -80px;
+			}
+			.mainRight .topTabsMenu ul li.active a, 
+			.mainRight .topTabsMenu ul li.active a:hover{
+			background-position:100% -120px;
+			color:#000;
+			}
+		/*Speciel dropdown element*/
+		.mainRight .topTabsMenu ul li.dropDownItem{
+		background-position:100% -160px;
+		position:relative;
+		width:37px;
+		margin-left:19px;
+		padding-right:21px;
+		}
+			.mainRight .topTabsMenu ul li.dropDownItem a{
+			padding:0;
+			width:37px;
+			text-align:left;
+			display:block;
+			float:left;
+			height:25px;
+			background:none;
+			color:#4f4d4d;
+			text-indent:-4444px;
+			}
+			.mainRight .topTabsMenu ul li.dropDownItem:hover{
+			background-position:100% -200px;
+			}
+			.mainRight .topTabsMenu ul li.dropDownItem:hover ul{
+			display:block;
+			}
+		
+			.mainRight .topTabsMenu ul li.dropDownItem ul{
+			display:none;
+			list-style:none;
+			position:absolute;
+			z-index:2;
+			zoom:1;
+			top:22px;
+			right:21px;
+			float:right;
+			border-width:0 1px 1px 1px;
+			border-style:solid;
+			border-color:#ccc;
+			width:160px; /*Bredden kan sættes her, evt. defineres inline?*/
+			background:url(../images/menu/gx_rightTopTabs.png) 100% -240px no-repeat;
+			padding-top:1px;
+			}
+				.mainRight .topTabsMenu ul li.dropDownItem ul li{
+				width:100%;
+				float:left;
+				position:relative;
+				left:0;
+				margin:0;
+				padding:0;
+				background:#fff;
+				}
+					.mainRight .topTabsMenu ul li.dropDownItem ul li a{
+					text-indent:0;
+					width:86%;
+					display:block;
+					margin:0;
+					padding:1px 7% 1px 7%;
+					background:#fff;
+					color:#666;
+					}
+					.mainRight .topTabsMenu ul li.dropDownItem ul li a:hover{
+					background:#efefef;
+					color:#242424;
+					}
+		
+
+		
+		
+/****************************************************************************************************************/	
+/********** The Frame (Right) ***********************************************************************************/			
+.theFrame{
+width:100%;
+}
+	.theFrame .innerFrame{
+	background:#f9f9f9 url(../images/backgrounds/bg_innerFrame.png) repeat-x;
+	width:100%;
+	border-top:1px solid #a9d7e3;
+	z-index:1;
+	}
+		.theFrame .innerFrame .scrollFrame{
+		overflow:auto;
+		width:100%;
+		position:relative;
+		}
+			.theFrame .innerFrame .scrollFrame .frameContent{
+			width:92%;
+			position:relative;
+			top:25px;
+			left:27px;
+			}
+			
+
+	
+	
+	
+
+			
+			
+/****************************************************************************************************************/	
+/********** pTwoColumnsLayout (2 kolonne side) ******************************************************************/	
+/****************************************************************************************************************/			
+.pTwoColumnsLayout{
+width:100%;
+clear:both;
+}	
+	.pTwoColumnsLayout .pTop {
+		
+	}
+	.pTwoColumnsLayout .pColum1{
+	float:left;
+	width:49%;/*(341px)*/
+	width:360px;/*(341px)*/
+	}	
+	.pTwoColumnsLayout .pColum2{
+	float:right;
+	float:left;
+	width:49%;/*(341px)*/
+	width:360px;/*(341px)*/
+	}	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+

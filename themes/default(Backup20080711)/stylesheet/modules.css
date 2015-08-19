@@ -1,0 +1,781 @@
+/* Tuksi Backend - Stylesheet */
+/* RPE 04.10.2007 */
+/* module elements */
+
+
+
+
+
+
+
+/****************************************************************************************************************/	
+/********** Buttons *********************************************************************************************/	
+/****************************************************************************************************************/
+
+		/*Default Button HTML Eks:  <a href="#" class="buttonType1"><span><span>Button Text</span></span></a>  **/
+
+		
+/****************************************************************************************************************/
+/********** Button Type 1 ***************************************************************************************/	
+a.buttonType1{
+height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+a.buttonType1 span{
+background:url(../images/buttons/bn_buttonType1.png) 0 0 no-repeat;
+height:21px;
+text-decoration:none;
+float:left;
+cursor:pointer;
+}
+	a.buttonType1 span span, 
+	a.buttonType1 span:hover span{
+	background:url(../images/buttons/bn_buttonType1.png) 100% -40px no-repeat;
+	padding:0 16px;
+	height:21px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	}	
+a.buttonType1 span:hover{
+background-position:0px -80px;
+}
+
+/****************************************************************************************************************/
+/********** Button Type 2 ***************************************************************************************/	
+a.buttonType2{
+height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+a.buttonType2 span{
+background:url(../images/buttons/bn_buttonType2.png) 0 0 no-repeat;
+height:21px;
+text-decoration:none;
+float:left;
+cursor:pointer;
+}
+	a.buttonType2 span span, 
+	a.buttonType2 span:hover span{
+	background:url(../images/buttons/bn_buttonType2.png) 100% -40px no-repeat;
+	padding:0 16px;
+	height:21px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	}	
+a.buttonType2 span:hover{
+background-position:0px -80px;
+}
+
+/****************************************************************************************************************/
+/********** Button Type 3 ***************************************************************************************/	
+a.buttonType3{
+height:20px;
+line-height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+	a.buttonType3 span{
+	background:url(../images/buttons/bn_buttonType3.png) 0 0 no-repeat;
+	height:20px;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	}
+		a.buttonType3 span span, 
+		a.buttonType3 span:hover span{
+		background:url(../images/buttons/bn_buttonType3.png) 100% -40px no-repeat;
+		padding:0 16px;
+		height:20px;
+		line-height:20px;
+		color:#5c4b4b;
+		font-weight:bold;
+		text-align:center;
+		}	
+	a.buttonType3 span:hover{
+	background-position:0px -80px;
+	}
+		a.buttonType3 span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + itemOpen *************/
+	a.buttonType3.itemOpen span{
+	background-position:0 -120px;
+	}
+		a.buttonType3.itemOpen span span, 
+		a.buttonType3.itemOpen span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemOpen span:hover{
+	background-position:0px -160px;
+	}
+		a.buttonType3.itemOpen span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + itemClose *************/
+	a.buttonType3.itemClose span{
+	background-position:0 -200px;
+	}
+		a.buttonType3.itemClose span span, 
+		a.buttonType3.itemClose span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemClose span:hover{
+	background-position:0px -240px;
+	}
+		a.buttonType3.itemClose span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + itemDelete *************/
+	a.buttonType3.itemDelete span{
+	background-position:0 -280px;
+	}
+		a.buttonType3.itemDelete span span, 
+		a.buttonType3.itemDelete span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemDelete span:hover{
+	background-position:0px -320px;
+	}
+		a.buttonType3.itemDelete span:hover span{
+		color:#c61700;
+		}
+/*********** type 3 + itemAdd *************/
+	a.buttonType3.itemAdd span{
+	background-position:0 -360px;
+	}
+		a.buttonType3.itemAdd span span, 
+		a.buttonType3.itemAdd span:hover span{
+		background-position:100% -40px;
+		padding-left:30px;
+		}
+	a.buttonType3.itemAdd span:hover{
+	background-position:0px -400px;
+	}
+		a.buttonType3.itemAdd span:hover span{
+		color:#198ca9;
+		}
+/*********** type 3 + iconNegative *************/
+	a.buttonType3.iconNegative span{
+	background-position:0 -440px;
+	}
+		a.buttonType3.iconNegative span span, 
+		a.buttonType3.iconNegative span:hover span{
+		background-position:100% -40px;
+		padding-left:50px;
+		padding-right:45px;
+		color:#000;
+		}
+	a.buttonType3.iconNegative span:hover{
+	background-position:0px -480px;
+	}
+		a.buttonType3.iconNegative span:hover span{
+		color:#d21c00;
+		}
+/*********** type 3 + iconPositive *************/
+	a.buttonType3.iconPositive span{
+	background-position:0 -520px;
+	}
+		a.buttonType3.iconPositive span span, 
+		a.buttonType3.iconPositive span:hover span{
+		background-position:100% -40px;
+		padding-left:45px;
+		padding-right:40px;
+		color:#000;
+		}
+	a.buttonType3.iconPositive span:hover{
+	background-position:0px -560px;
+	}
+		a.buttonType3.iconPositive span:hover span{
+		color:#21b41f;
+		}
+
+/****************************************************************************************************************/
+/********** Button Type 4 ***************************************************************************************/	
+a.buttonType4{
+height:20px;
+line-height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+	a.buttonType4 span{
+	background:url(../images/buttons/bn_buttonType4_default.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/buttons/bn_buttonType4_default.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	_*background:none!important;/*(IE6)*/
+	height:20px;
+	width:20px;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	}
+/*********** type 4 + iconEdit *************/	
+	a.buttonType4.iconEdit span{
+	background:url(../images/buttons/bn_buttonType4_iconEdit.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/buttons/bn_buttonType4_iconEdit.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+/*********** type 4 + iconDelete *************/	
+	a.buttonType4.iconDelete span{
+	background:url(../images/buttons/bn_buttonType4_iconDelete.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/buttons/bn_buttonType4_iconDelete.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+	}
+	
+	
+/****************************************************************************************************************/
+/********** Button Type X (close window [X]) ********************************************************************/	
+a.buttonTypeX{
+width:38px;
+height:30px;
+background:url(../images/buttons/bn_buttonTypeX.png) no-repeat;
+_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/buttons/bn_buttonTypeX.png', enabled='true', sizingMethod='crop');/*(IE6)*/
+_*background:url(none);/*(IE6)*/
+float:right;
+cursor:pointer;
+}
+
+
+
+/****************************************************************************************************************/	
+/********** Messages, Errors ... ********************************************************************************/	
+/****************************************************************************************************************/
+.statusMessage.error{
+background:#fffcd4;
+border:1px solid #e5e5e5;
+margin-bottom:19px;
+}
+	.statusMessage.error p{
+	background:url(../images/graphics/gx_statusMessage_error.png) 0 0 no-repeat;
+	padding:4px 6px;
+	padding-left:25px;
+	left:-7px;
+	position:relative;
+	}
+.statusMessage.correct{
+background:#f0ffd8;
+border:1px solid #fff;
+margin-bottom:19px;
+}
+	.statusMessage.correct p{
+	background:url(../images/graphics/gx_statusMessage_correct.png) 0 0 no-repeat;
+	padding:4px 6px;
+	padding-left:25px;
+	left:-7px;
+	position:relative;
+	}
+
+
+
+
+	
+	
+
+/****************************************************************************************************************/	
+/********** mContent module (Bredde til rådighed: 695px) ********************************************************/	
+/****************************************************************************************************************/
+.mContentDefault{
+width:100%;
+}
+
+/********** mContent Tab Navigation *****************************************************************************/
+	.mContentDefault .tabNavigation{
+	width:100%;
+	margin-bottom:-3px;
+	position:relative;
+	padding-bottom:2px;
+	background:url(../images/backgrounds/bg_mContentDefaultTabNavigation.png) 0 100% no-repeat;
+	}
+		.mContentDefault .tabNavigation ul{
+		list-style:none;
+		width:100%;
+		height:21px;
+		}
+			.mContentDefault .tabNavigation ul li{
+			float:left;
+			padding-right:2px;
+			margin-right:2px;
+			height:21px;
+			background-image:url(../images/graphics/gx_mContentDefaultTabNavigation.png);
+			background-position:100% -40px;
+			background-repeat:no-repeat;
+			}
+				.mContentDefault .tabNavigation ul li a{
+				padding:0 20px 0 22px;
+				float:left;
+				height:17px;
+				padding-top:4px;
+				line-height:15px;
+				background-image:url(../images/graphics/gx_mContentDefaultTabNavigation.png);
+				background-position:0 0;
+				background-repeat:no-repeat;
+				text-decoration:none;
+				}
+			.mContentDefault .tabNavigation ul li:hover{
+			background-position:100% -120px;
+			}
+				.mContentDefault .tabNavigation ul li:hover a{
+				background-position:0 -80px;
+				}
+			.mContentDefault .tabNavigation ul li.active, 
+			.mContentDefault .tabNavigation ul li.active:hover{
+			background-position:100% -200px;
+			}
+				.mContentDefault .tabNavigation ul li.active a, 
+				.mContentDefault .tabNavigation ul li.active:hover a{
+				background-position:0 -160px;
+				}
+
+/********** mContent module background styling ******************************************************************/			
+	.mContentDefault .moduleTop{
+	width:100%;
+	height:13px;
+	font-size:0;/*(IE6)*/
+	background:url(../images/backgrounds/bg_mContentDefaultTop.png) no-repeat;
+	}
+	.mContentDefault .moduleMiddle{
+	width:98%;
+	overflow:hidden;
+	clear:both;
+	padding-left:1%;
+	padding-right:1%;
+	min-height:200px;/*TEMP*/
+	/*_*height:200px;*//*TEMP*/
+	background:url(../images/backgrounds/bg_mContentDefaultMiddle.png) repeat-y;
+	}
+	.mContentDefault .moduleBottom{
+	width:100%;
+	clear:both;
+	height:10px;
+	font-size:0;/*(IE6)*/
+	background:url(../images/backgrounds/bg_mContentDefaultBottom.png) no-repeat;
+	}
+	
+/********** mContent action button row ( top & bottom) **********************************************************/
+/********** mContent content item row ***************************************************************************/	
+.mContentDefault .actionButtonsRow{
+width:98%;
+clear:both;
+min-height:20px;/*(Mozilla)*/
+padding-bottom:18px;
+padding-top:9px;
+}
+	.mContentDefault .actionButtonsRow ul{
+	list-style:none;
+	clear:both;
+	}
+		.mContentDefault .actionButtonsRow ul li{
+		float:left;
+		margin-left:6px;
+		}
+		.mContentDefault .actionButtonsRow ul li.positionRight{
+		float:right;
+		}
+			.mContentDefault .actionButtonsRow ul li input.checkbox{
+			margin-top:3px;
+			*margin-top:0;/*(IE)*/
+			_*left:-6px;/*(IE6)*/
+			_*position:relative;/*(IE6)*/
+			margin-right:5px;/*(Mozilla)*/
+			*margin-right:2px;/*(IE7)*/
+			_*margin-right:-4px;/*(IE6)*/
+			}
+
+/********** mContent content item row ***************************************************************************/	
+.mContentDefault .contentItemRow{
+width:98.5%;
+overflow:hidden;
+padding-left:5px;
+clear:both;
+margin-bottom:11px;
+border:1px solid #dcdcdc;
+background:#f1f1f1 url(../images/backgrounds/bg_mContentDefaultContentItemRow.png) repeat-x;
+}
+	.mContentDefault .contentItemRow .itemHeader{
+	width:100%;
+	clear:both;
+	height:28px;
+	}
+		.mContentDefault .contentItemRow .itemHeader ul{
+		list-style:none;
+		clear:both;
+		padding-top:3px;
+		}
+			.mContentDefault .contentItemRow .itemHeader li{
+			float:left;
+			}
+			.mContentDefault .contentItemRow .itemHeader li.positionRight{
+			float:right;
+			margin-left:20px;
+			padding-right:6px;
+			}
+				.mContentDefault .contentItemRow .itemHeader li input.checkbox{
+				margin-top:3px;
+				*margin-top:0;/*(IE)*/
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6{
+				font-weight:bold;
+				color:#3f4041;
+				text-decoration:underline;
+				cursor:pointer;
+				padding:3px 10px 0 13px;
+				margin-left:10px;
+				background:url(../images/icons/ic_arrowType1.png) 0px 0px no-repeat;
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6.active{
+				background:url(../images/icons/ic_arrowType1.png) 0px -40px no-repeat;
+				}
+				.mContentDefault .contentItemRow .itemHeader li h6:hover{
+				text-decoration:none;
+				}
+				.mContentDefault .contentItemRow .itemHeader li label{
+				color:#767676;
+				}
+					.mContentDefault .contentItemRow .itemHeader li label span{
+					color:#646464;/*default color*/
+					}
+				.mContentDefault .contentItemRow .itemHeader li select{
+				}
+					.mContentDefault .contentItemRow .itemHeader li select option{
+					}
+	.mContentDefault .contentItemRow .itemContent{
+	width:99.5%;
+	overflow:hidden;
+	clear:both;
+	}
+		.mContentDefault .contentItemRow .itemContent table.moduleElementRow{
+		margin:9px 10px 3px 10px;
+		position:relative;
+		}
+				.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td{
+				padding-right:20px;
+				}
+				.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td.column1{
+				width:100px;
+				padding-right:0;
+				}
+					.mContentDefault .contentItemRow .itemContent table.moduleElementRow tr td.column1 label{
+					width:90px;
+					}
+
+
+
+					
+									
+/****************************************************************************************************************/	
+/********** mListView module (Part of mContentDefault) **********************************************************/	
+/****************************************************************************************************************/		
+
+.mListView{
+width:99.5%;
+overflow:hidden;
+}
+	.mListView h6{
+	line-height:28px;
+	font-weight:bold;
+	padding:0 12px;
+	border:1px solid #dcdcdc;
+	background:#fdfdfd url(../images/backgrounds/bg_mListView.png) repeat-x;
+	}
+	.mListView table{
+	width:100%;
+	margin:8px 0;
+	}
+		.mListView table th{
+		padding:1px 12px 5px 12px;
+		font-weight:bold;
+		color:#198ca9;
+		}
+		.mListView table td{
+		padding:1px 13px;
+		cursor:default;
+		background:#f5f5f5;
+		}
+		.mListView table tr.even td{
+		background:none;
+		}
+		.mListView table tr:hover td{
+		background:#bfe9f3;
+		}
+			.mListView table td strong{
+			text-decoration:underline;
+			}
+			.mListView table td a{
+			text-decoration:none;
+			}
+			.mListView table td a:hover{
+			text-decoration:underline;
+			}
+			.mListView table td ul.buttons{
+			list-style:none;
+			float:right;
+			}
+				.mListView table td ul.buttons li{
+				float:left;
+				padding-left:10px;
+				}
+				
+				
+				
+/****************************************************************************************************************/	
+/********** mListNavigation module ******************************************************************************/	
+/****************************************************************************************************************/						
+.mListNavigation{
+text-align:center;
+cursor:default;
+}
+	.mListNavigation ul{
+	list-style:none;
+	}
+		.mListNavigation ul li{
+		display:inline;
+		padding:0 1px;
+		}
+			.mListNavigation ul li a{
+			padding:0 2px;
+			}
+			.mListNavigation ul li strong{
+			}
+
+
+
+
+
+					
+					
+					
+					
+					
+					
+/****************************************************************************************************************/	
+/********** mPopupWindow module *********************************************************************************/	
+/****************************************************************************************************************/
+
+.mPopupWindow{
+position:absolute;top:200px;left:300px;
+width:567px;
+border:1px solid #6f6f6f;
+padding:3px;
+background:#fff;
+z-index:10;
+}
+	.mPopupWindow .windowHeader{
+	height:30px;
+	overflow:hidden;
+	background:url(../images/backgrounds/bg_popupWindowHeader.png) repeat-x;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	margin-bottom:-4px;
+	margin-right:-8px;
+	position:relative;
+	}
+		.mPopupWindow .windowHeader h5{
+		line-height:30px;
+		padding:0 11px;
+		color:#fff;
+		font-weight:bold;
+		cursor:default;
+		}
+		.mPopupWindow .windowHeader div.headerButton{
+		position:absolute;
+		width:38px;
+		height:30px;
+		top:0;
+		right:0;
+		}
+	.mPopupWindow .windowInner{
+	width:99.6%;
+	overflow:hidden;
+	border:1px solid #ededed;
+	border-top:none;
+	background:#f1f1f1 url(../images/backgrounds/bg_popupWindowInner.jpg) repeat-x;
+	}
+		.mPopupWindow .windowInner .windowInnerPadding{
+		padding:4% 1% 0 4%;
+		padding-bottom:0;
+		}
+
+		.mPopupWindow .windowInner table.moduleElementRow{
+		margin-bottom:20px;
+		position:relative;
+		}
+				.mPopupWindow .windowInner table.moduleElementRow tr td{
+				padding-right:15px;
+				padding-bottom:3px;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td select, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td input.text, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td label{
+				margin-right:5px;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td label{
+				color:#111;
+				}
+				.mPopupWindow .windowInner table.moduleElementRow tr td input.text, 
+				.mPopupWindow .windowInner table.moduleElementRow tr td select{
+				margin-bottom:5px;
+				}
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+/****************************************************************************************************************/	
+/********** mPopupAlertBox module *********************************************************************************/	
+/****************************************************************************************************************/
+
+.mPopupAlertBox{
+position:absolute;top:300px;left:400px;
+width:346px;
+border:1px solid #6f6f6f;
+padding:3px;
+background:#fff;
+z-index:10;
+}
+	.mPopupAlertBox .alertBoxHeader{
+	height:30px;
+	overflow:hidden;
+	background:url(../images/backgrounds/bg_popupWindowHeader.png) repeat-x;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	margin-bottom:-4px;
+	margin-right:-8px;
+	position:relative;
+	}
+		.mPopupAlertBox .alertBoxHeader h5{
+		line-height:30px;
+		padding:0 11px;
+		color:#fff;
+		font-weight:bold;
+		cursor:default;
+		}
+		.mPopupAlertBox .alertBoxHeader div.headerButton{
+		position:absolute;
+		width:38px;
+		height:30px;
+		top:0;
+		right:0;
+		}
+	.mPopupAlertBox .alertBoxInner{
+	width:99.6%;
+	overflow:hidden;
+	border:1px solid #ededed;
+	border-top:none;
+	background:#f8f5e4 url(../images/backgrounds/bg_popupAlertBox.jpg) repeat-x;
+	}
+		.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding{
+		padding:10% 1% 0 4%;
+		padding-bottom:0;
+		}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding strong.alertMessage{
+			display:block;
+			text-align:center;
+			margin-bottom:30px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons{
+			list-style:none;
+			float:right;
+			padding-top:10px;
+			margin-bottom:15px;
+			position:relative;
+			left:-14px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons li{
+			float:left;
+			margin-right:6px;
+			}
+			.mPopupAlertBox .alertBoxInner .alertBoxInnerPadding ul.alertButtons li a{
+			
+			}
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/****************************************************************************************************************/	
+/********** mFrameFooter module *********************************************************************************/	
+/****************************************************************************************************************/			
+.virtFrameFooter{
+height:90px;
+width:100%;
+}
+					/*Ser ikke rigtigt ud i IE6 når modulerne foldes ud. 
+					  Løsningen kan være at mFrameFooter ikke positioneres absolute, men bare følger content, 
+					  hvilket dog ikke giver den samme visning hvis der er meget lidt content. 
+					  - mFrameFooter vil nemlig rykke sig op under sidste content element */
+.mFrameFooter{
+width:695px;
+height:90px;
+position:absolute;
+left:0px;
+bottom:12px;
+cursor:default;
+}
+	.mFrameFooter h6{
+	padding:5px 12px;
+	background:url(../images/graphics/gx_frameFooter.png) 0 100% repeat-x;
+	font-weight:bold;
+	margin-bottom:2px;
+	}
+	.mFrameFooter table.footerInfo{
+	zoom:1;
+	}
+		.mFrameFooter table.footerInfo tr td{
+		padding:2px 12px;
+		color:#555;
+		}
+			.mFrameFooter table.footerInfo tr td strong{
+			color:#000;
+			}
+			.mFrameFooter table.footerInfo tr td a{
+			color:#555;
+			}
+			.mFrameFooter table.footerInfo tr td a:hover{
+			color:#777;
+			text-decoration:underline;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

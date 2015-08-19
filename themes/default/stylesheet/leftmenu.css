@@ -1,0 +1,191 @@
+/* Tuksi 4.0 Backend - Stylesheet */
+/* RPE 22.10.2007 */
+
+/*Hacks info: 
+Ud for styles som udelukkende er tiføjet for at tilfredsstille eksempelvis en bestemt version af Internet Explorer, 
+skrives en kommentar som denne:  "(IE6)", "(FF1.5)", "(FF2)" eller "(SF2)" osv. 
+Der skal så vidt muligt forsøges at undgå hacks, som på nuværende tidspunkt kun rammer en bestemt browser. 
+Eks. " _* " (Underscore Stjerne). Brug i stedet styles som læses at alle browsere, men kun påvirkes at eksempelvis IE.
+Dette er for at fremtidssikre css-laget mod kommende browsere.
+*/
+
+
+
+/****************************************************************************************************************/	
+/********** Left Menu *******************************************************************************************/	
+/****************************************************************************************************************/			
+	.mainLeft .leftFrame{
+	/*height:597px;*//*TEMP*/
+	overflow:auto;
+	position:relative;
+	top:38px;
+	}
+
+
+	.mainLeft .leftMenu{
+	position:relative;
+	left:0px;
+	top:0px;
+	width:210px;
+	float:right;
+	}
+	.mainLeft .leftMenu ul{/*level 1*/
+	width:210px;
+	left:0px;
+	list-style:none;
+/*	background:url(../images/menu/gx_tree_vertLine.png) 8px 100% repeat-y;*/
+	float:left;
+	position:relative;
+	}
+		.mainLeft .leftMenu ul ul{left:20px; width:190px;}/*level 2*/
+			.mainLeft .leftMenu ul ul ul{width:170px;}/*level 3*/
+				.mainLeft .leftMenu ul ul ul ul{width:150px;}/*level 4*/
+					.mainLeft .leftMenu ul ul ul ul ul{width:130px;}/*level 5*/
+						.mainLeft .leftMenu ul ul ul ul ul ul{width:110px;}/*level 6*/
+							.mainLeft .leftMenu ul ul ul ul ul ul ul{width:90px;}/*level 7*/
+								.mainLeft .leftMenu ul ul ul ul ul ul ul ul{width:70px;}/*level 8*/
+									.mainLeft .leftMenu ul ul ul ul ul ul ul ul ul{width:50px;}/*level 9*/
+										.mainLeft .leftMenu ul ul ul ul ul ul ul ul ul ul{width:30px;}/*level 10*/
+			
+			
+		.mainLeft .leftMenu ul li.home, 
+		.mainLeft .leftMenu ul li.home:hover{
+		background:url(../images/menu/gx_menutree_icons.png) 0px 0px no-repeat;
+		text-indent:-4444px;
+		padding-bottom:7px;
+		}
+		.mainLeft .leftMenu ul li{
+		display:block;
+		zoom:1;/*(IE6)*/
+		width:100%;
+		float:left;
+		padding-top:2px;
+		padding-bottom:2px;
+		position:relative;
+		}
+			.mainLeft .leftMenu ul li a{
+			color:#5c4b4b;
+			display:block;
+			text-decoration:none;
+			height:1%;/*(IE6)*/
+			}	
+			.mainLeft .leftMenu ul li a:hover{
+			background-image:url(../images/menu/gx_tree_active.png);
+			background-repeat:repeat-y;
+			}
+				.mainLeft .leftMenu ul li a span{
+				color:#5c4b4b;
+				display:block;
+				text-decoration:none;
+				padding-left:24px;
+				padding-right:10px;
+				line-height:15px;
+				}
+			.mainLeft .leftMenu ul li img{
+			width:19px;
+			height:19px;
+			position:absolute;
+			top:0;
+			left:0;
+			cursor:pointer;
+			}
+
+		.mainLeft .leftMenu ul li.noChild {
+			background:url(../images/menu/gx_tree_minus.png) 4px -16px no-repeat;
+		}
+		.mainLeft .leftMenu ul li.noChildLast {
+			background:url(../images/menu/gx_tree_minus.png) 4px -990px no-repeat;
+		}
+		.mainLeft .leftMenu ul li.closed{
+		background:url(../images/menu/gx_tree_plus.png) 4px 0px no-repeat;
+		}
+		.mainLeft .leftMenu ul li.closedLast {
+			background-image: url(../images/menu/gx_tree_plus_last.png);
+		}
+		.mainLeft .leftMenu ul li.open{
+		background:url(../images/menu/gx_tree_minus.png) 4px 0px no-repeat;
+		}
+		.mainLeft .leftMenu ul li.openLast {
+			background-image: url(../images/menu/gx_tree_minus_last.png);
+		}
+			.mainLeft .leftMenu ul li.closed a, 
+			.mainLeft .leftMenu ul li.open a{
+			padding-left:20px;
+			}
+			.mainLeft .leftMenu ul li.closed a:hover, 
+			.mainLeft .leftMenu ul li.open a:hover{
+			background-position:20px 0;
+			}
+				.mainLeft .leftMenu ul li a span.invisiblefolder, 
+				.mainLeft .leftMenu ul li a span.visiblefolder, 
+				.mainLeft .leftMenu ul li a span.invisiblefolderNotpublic, 
+				.mainLeft .leftMenu ul li a span.visiblefolderNotpublic{
+				background-position:0 0;
+				background-repeat:no-repeat;
+				}
+				
+				/*
+				.mainLeft .leftMenu ul li a span.invisiblefolder{background-image:url(../images/menu/gx_tree_folder_dimmed.png);}
+				.mainLeft .leftMenu ul li a span.visiblefolder{background-image:url(../images/menu/gx_tree_folder_normal.png);}
+				.mainLeft .leftMenu ul li a span.invisiblefolderNotpublic{background-image:url(../images/menu/gx_tree_folder_dimmed_publish.png);}
+				.mainLeft .leftMenu ul li a span.visiblefolderNotpublic{background-image:url(../images/menu/gx_tree_folder_normal_publish.png);}
+				*/
+				.mainLeft .leftMenu ul li a span.invisiblefolder,
+				.mainLeft .leftMenu ul li a span.visiblefolder,
+				.mainLeft .leftMenu ul li a span.invisiblefolderNotpublic,
+				.mainLeft .leftMenu ul li a span.visiblefolderNotpublic{background-image:url(../images/menu/gx_menutree_icons.png);}
+				
+				.mainLeft .leftMenu ul li a span.invisiblefolder {background-position: 0 -480px;}
+				.mainLeft .leftMenu ul li a span.visiblefolder {background-position: 0 -400px;}
+				.mainLeft .leftMenu ul li a span.invisiblefolderNotpublic {background-position: 0 -640px;}
+				.mainLeft .leftMenu ul li a span.visiblefolderNotpublic {background-position: 0 -560px;}
+				
+			.mainLeft .leftMenu ul li.noChild a{
+			padding-left:0;
+			}
+			.mainLeft .leftMenu ul li.noChild a:hover{
+			background-position:7px 0;
+			}
+				.mainLeft .leftMenu ul li a span.invisiblepage, 
+				.mainLeft .leftMenu ul li a span.visiblepage, 
+				.mainLeft .leftMenu ul li a span.invisiblepageNotpublic, 
+				.mainLeft .leftMenu ul li a span.visiblepageNotpublic{
+				padding-left:24px;
+				background-position:0 0;
+				background-repeat:no-repeat;
+				}
+				/*
+				.mainLeft .leftMenu ul li a span.invisiblepage{background-image:url(../images/menu/gx_tree_page_dimmed.png);}
+				.mainLeft .leftMenu ul li a span.visiblepage{background-image:url(../images/menu/gx_tree_page_normal.png);}
+				.mainLeft .leftMenu ul li a span.invisiblepageNotpublic{background-image:url(../images/menu/gx_tree_page_dimmed_publish.png);}
+				.mainLeft .leftMenu ul li a span.visiblepageNotpublic{background-image:url(../images/menu/gx_tree_page_normal_publish.png);}
+				*/
+				
+				.mainLeft .leftMenu ul li a span.invisiblepage,
+				.mainLeft .leftMenu ul li a span.visiblepage,
+				.mainLeft .leftMenu ul li a span.invisiblepageNotpublic,
+				.mainLeft .leftMenu ul li a span.visiblepageNotpublic{background-image:url(../images/menu/gx_menutree_icons.png);}
+				
+				.mainLeft .leftMenu ul li a span.invisiblepage{background-position: 0 -160px;}
+				.mainLeft .leftMenu ul li a span.visiblepage{background-position: 0 -80px;}
+				.mainLeft .leftMenu ul li a span.invisiblepageNotpublic{background-position: 0 -320px;}
+				.mainLeft .leftMenu ul li a span.visiblepageNotpublic{background-position: 0 -240px;}
+				
+		.mainLeft .leftMenu ul li a.active span{
+		color:#157790;
+		}	
+		.mainLeft .leftMenu ul li a span.invisiblefolder, 
+		.mainLeft .leftMenu ul li a span.invisiblefolderNotpublic, 	
+		.mainLeft .leftMenu ul li a span.invisiblepage, 
+		.mainLeft .leftMenu ul li a span.invisiblepageNotpublic{
+		color:#897e7e;
+		}
+		.mainLeft .leftMenu ul li a.active span.invisiblefolder, 
+		.mainLeft .leftMenu ul li a.active span.invisiblefolderNotpublic, 	
+		.mainLeft .leftMenu ul li a.active span.invisiblepage, 
+		.mainLeft .leftMenu ul li a.active span.invisiblepageNotpublic{
+		color:#68949f;
+		}
+		
+		
+	

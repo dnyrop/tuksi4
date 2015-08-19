@@ -1,0 +1,182 @@
+/* Tuksi 4 Frontend - Stylesheet */
+/* RPE 28.11.2007 */
+
+html{
+}
+
+body{
+text-align:center;
+background:#fff url(/images/backgrounds/bg_body.jpg) 0 100% repeat-x;
+background-attachment: fixed;
+
+}
+body.credits {
+overflow:hidden;
+}
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/
+/********** These are standard sIFR styles... do not modify *********************************************************/	
+/********************************************************************************************************************/
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+.sIFR-replaced {
+	visibility: visible !important;
+}
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+/*//END standard sIFR styles*/
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/
+/********** global styles *******************************************************************************************/	
+/********************************************************************************************************************/	
+
+/********** Clear float elements ************************************************************************************/
+.clr{
+clear:both;
+height:1px;
+overflow:hidden;
+margin-top:-1px;
+}
+br.clr{
+line-height:0;
+font-size:0;
+width:100%;
+}
+
+/********** Formular Star(*) ****************************************************************************************/
+.star{/* */
+color:#f2c513;
+font-weight:bold;
+font:bold 11px/16px Tahoma, Verdana, sans-serif;
+padding:0 3px;
+display:inline;
+}
+
+/********** Form elementer ******************************************************************************************/
+select{
+font-size:11px;
+color:#433f3c;
+}
+input.text{
+padding:1px;
+font:10px/11px Verdana, Helvetica,  sans-serif;
+color:#555;
+}
+textarea{
+font:normal 11px/13px Arial, Verdana, Helvetica,  sans-serif;
+overflow:auto;
+}
+input.radio.radioLeft{
+*margin-top:-2px;/*(IE)*/
+margin-right:6px;
+*margin-right:2px;
+}
+input.checkbox.checkboxLeft{
+*margin-top:-2px;/*(IE)*/
+margin-right:6px;
+*margin-right:2px;
+}
+
+
+
+
+
+/****************************************************************************************************************/
+/********** global Buttons **************************************************************************************/	
+/****************************************************************************************************************/	
+
+/********** Button Type 1 ***************************************************************************************/	
+a.buttonType1{
+height:20px;
+line-height:21px;
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+	a.buttonType1 span{
+	background:url(/images/buttons/bn_buttonType1.png) 0 0 no-repeat;
+	height:20px;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	}
+		a.buttonType1 span span{
+		background:url(/images/buttons/bn_buttonType1.png) 100% -40px no-repeat;
+		padding:0 16px;
+		height:20px;
+		line-height:20px;
+		color:#076861;
+		font-weight:bold;
+		text-align:center;
+		}
+
+
+
+/********************************************************************************************************************/
+/********** mText ******************** Define styles from the CMS Html-editor here **********************************/	
+/********************************************************************************************************************/	
+.editorArea{}
+/*No global styles' alowed on the editorArea element above!!!*/
+
+	.editorArea p{
+	margin-bottom:15px;
+	}
+	.editorArea ul{
+	list-style:none;
+	margin:0;
+	margin-bottom:12px;
+	}
+		.editorArea ul li{
+		padding-left:18px;
+		background:url(/images/graphics/gx_bulletSquareType1.png) 0 5px no-repeat;
+		margin:0.3em 0;
+		display:block;
+		height:1%;/*(IE)*/
+		}
+			.editorArea ul li ul li{
+			color:#848585;
+			background-position:1% -495px;
+			}
+	.editorArea ol{
+	margin-bottom:12px;
+	}
+		.editorArea ol li{
+		}
+			.editorArea ol li ol li{
+			color:#848585;
+			}
+	.editorArea a{
+	  font-size: 11px;
+	}
+	.editorArea a:hover{
+	}
+	
+	

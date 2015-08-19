@@ -1,0 +1,231 @@
+div.debug {
+	background: #e6e7e0;
+}
+	div.debug_inner {
+		padding: 10px;
+	}
+		div.debug h1, div.debug .new_head {
+			background: url(/images/backgrounds/bg_h2.gif) repeat-x !important;
+			color:#7f1301 !important;
+			font: bold 12px/23px arial, sans-serif !important;
+			height: 23px !important;
+			padding: 0 0 0 6px !important;
+			margin: 0 !important;
+		}
+		
+		/*div.debug table {
+			width: 100%;
+		}
+		div.debug table td {
+		}
+		div.debug table tr.even td {
+			background: #e1e3dc !important;
+		}
+	
+		table.explain {
+			border-spacing: 0 !important;
+			border-collapse:collapse;
+		}
+		table.explain td{
+			border-collapse:collapse;
+			border:1px solid #003F2F;
+			padding:2px;
+		}	*/
+		
+
+#tuksi-debug {
+	position:absolute;
+	top:0;
+	right:0;
+	width:200px;
+	border-left:1px solid #C6C7C1;
+	border-bottom:1px solid #C6C7C1;
+	text-align:left;
+	cursor:pointer;
+	color:#7F1301;
+	font-size: 12px;
+	font-family: verdana, geneva, sans-serif;
+	background:#F2F3F0 url(/images/tuksi/debug/bg.gif) 0 100% repeat-x;
+}
+
+	#tuksi-debug .logo{
+		margin-left:3px;
+		margin-top:3px;
+	}
+	#tuksi-debug table{
+		margin-top:3px;
+		padding-left:3px;
+	}
+	#tuksi-debug .detail{
+		padding-right: 3px;
+		text-align:right;
+		margin-bottom:3px;
+	}
+	#tuksi-debug .detail a{
+		color:#820106;
+	}
+
+	
+#tuksi-debug-menu-test ul{
+	position:absolute;		
+	top:4px;
+	list-style:none;
+	height:10px;
+	margin-bottom:7px;
+	margin-top:0px;
+	padding-left:0px;
+}
+	
+#tuksi-debug-menu ul.areamenu {
+	position:absolute;		
+	top:4px;
+	list-style:none;
+	height:10px;
+	margin-left:0;
+	margin-bottom:7px;
+	margin-top:0px;
+	padding-left:0px;
+}
+
+	#tuksi-debug-menu ul.areamenu li {
+		float:left;
+		margin:0 1px 0 0;
+	}
+	
+		#tuksi-debug-menu ul.areamenu li .left {
+			float:left;
+			height:16px;
+			width:2px;
+			overflow:hidden;
+			background:url(/images/tuksi/debug/bg_tab_left.gif) no-repeat 0 0;
+		}
+	
+		#tuksi-debug-menu ul.areamenu li .right {
+			float:left;
+			height:16px;
+			width:2px;
+			overflow:hidden;
+			background:url(/images/tuksi/debug/bg_tab_right.gif) no-repeat 0 0;
+		
+		}
+	
+		#tuksi-debug-menu ul.areamenu li a {
+			float:left;
+			height:15px;
+			line-height: 12px;
+			padding:1px 10px 0;
+			background:url(/images/tuksi/debug/bg_tab.gif) repeat-x 0 0;
+			text-decoration:none;
+			color:#fff;
+			font-size: 9px;
+		}
+		
+		#tuksi-debug-menu ul.areamenu li.active a {
+			height:16px;
+			padding-top:1px;
+			padding-bottom:0;
+		}
+		
+		#tuksi-debug-menu ul.areamenu li a:hover {
+			color:#7f1301;
+		}
+		
+		#tuksi-debug-menu ul.areamenu li.active .left {
+			background-image:url(/images/tuksi/debug/bg_tab_active_left.gif);
+		}
+		
+		#tuksi-debug-menu ul.areamenu li.active .right {
+			background-image:url(/images/tuksi/debug/bg_tab_active_right.gif);
+		}
+		
+		#tuksi-debug-menu ul.areamenu li.active a {
+			color:#7f1301;
+			background-image:url(/images/tuksi/debug/bg_tab_active.gif);
+		}
+	
+	
+div.tuksi-debug-content {
+	position:absolute;
+	border: 1px solid #C6C7C1;
+	width:800px;
+	height:550px;
+	padding:5px;
+	background:#EDEAE1;
+	position:absolute;
+	top:30px;
+  left: 50%;
+  margin-left: -400px;
+ 	font-size: 12px;
+	font-family: verdana, geneva, sans-serif;
+	z-index:100000;
+}
+	
+	div.tuksi-debug-content div.tabContent {
+	  border: 1px solid #C6C7C1;
+	  position: relative;
+	  height:507px;
+	  z-index: 101;
+	  overflow:auto;
+	  padding:0;
+	  background:#E6E7E0;
+	}
+		div.tuksi-debug-content div.tabContent p {
+			padding:0;
+			margin:0;
+			font-size:10px;
+			border-bottom:1px solid #C6C7C1;
+		}
+		div.tuksi-debug-content div.tabContent p span.time{
+			position:relative;
+			float:right;
+			margin-top:-12px;
+		}
+		div.tuksi-debug-content div.tabContent p span.msg{
+			position:absolute;
+			left:60px;
+		}
+		div.tuksi-debug-content div.tabContent p.warning {
+			color:blue;
+		}
+		div.tuksi-debug-content div.tabContent p.error {
+			color:red;
+		}
+		div.tuksi-debug-content table.explain{
+			border:1px solid #AEAFA9;
+			width:100%;
+			border-spacing: 0 !important;
+			border-collapse:collapse;
+		}
+			div.tuksi-debug-content .explain th{
+				border:1px solid #AEAFA9;
+				background:#DDDED7;
+				text-align:left;
+				border-collapse:collapse;
+			}
+			div.tuksi-debug-content .explain tr{
+				border:1px solid #AEAFA9;
+			}
+			div.tuksi-debug-content .explain td{
+				border:1px solid #AEAFA9;
+				border-collapse:collapse;
+			}
+div.tuksi-debug-alert {
+	width:99%;
+	bottom:0;
+	position:absolute;
+	border-top:2px solid #7F1301;
+	background:#E6E7E0;
+	font-size: 12px;
+	font-family: verdana, geneva, sans-serif;
+	padding:3px;
+}
+div.tuksi-debug-alert h2{
+	padding:0;
+	margin:0 0 5px 0;
+	font-size: 16px;
+}
+div.tuksi-debug-alert p {
+	font-size: 12px;
+	color:black;
+	margin:0;
+}

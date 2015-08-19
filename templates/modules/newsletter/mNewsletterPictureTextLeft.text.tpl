@@ -1,0 +1,6 @@
+##HEADLINE##
+
+##CONTENT##
+##SHOW_START_LINK##
+Læs mere: ##TRACKINGURL##
+##SHOW_END_LINK##

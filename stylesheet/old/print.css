@@ -1,0 +1,14 @@
+/* Tuksi Frontend - Stylesheet */
+/* Version 2005-09-09-AMA */
+@media print {
+
+	/* make all fonts black on print outs */
+	* {
+		color:#000;
+	}
+	
+
+
+
+	
+}

@@ -1,0 +1,15 @@
+/* Tuksi Frontend - Stylesheet */
+/* RPE 25.01.06 */
+@media print {
+
+	/* make all fonts black on print outs */
+	* {
+		color:#000;
+	}
+	
+
+
+
+
+/*End Print*/	
+}

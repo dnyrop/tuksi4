@@ -1,0 +1,84 @@
+/* Tuksi Frontend - Stylesheet */
+body {
+	background: #DEDEDE;
+	padding: 0;
+	margin: 0;
+}
+
+.mainHeader{
+position:relative;
+background:#383838 url(/themes/default/images/backgrounds/bg_mainHeader.png) repeat-x;
+height:89px;
+font: bold 11px arial, Helvetica,Verdana, sans-serif;
+}
+	.mainHeader img {
+	float:left;
+	position:absolute;
+	top:11px;
+	left:12px;
+	}
+.headerTabs{
+	height:28px;
+	position:absolute;
+	top:61px;
+	left:0;
+	width:100%;
+	
+	background:url(/themes/default/images/backgrounds/bg_headerTabsLine.png) 0px 100% repeat-x;
+	clear:both;/*(IE6)*/
+	}
+		.headerTabs ul{
+		list-style:none;
+		margin:0;
+		padding: 0 0 0 2px;
+		}
+			.headerTabs ul li{
+			float:left;
+			position:relative;
+			height:28px;
+			}
+				.headerTabs ul li a{
+				float:left;
+				height:28px;
+				line-height:27px;
+				text-align:center;
+				font-weight:bold;
+				color:#f7f7f7;
+				margin-right:1px;
+				background:url(/themes/default/images/backgrounds/bg_headerTabs.png) 0px 0px repeat-x;
+				padding:0 22px;
+				text-decoration:none;
+				outline: 0;
+				}
+				.headerTabs ul li a:hover{
+				background-position:0 -40px;
+				}
+				.headerTabs ul li a.active, 
+				.headerTabs ul li a.active:hover{
+				background:url(/themes/default/images/backgrounds/bg_headerTabsActive.png) 100% 0px repeat-x;
+				margin-right:0;
+				color:#474747;
+				}
+				
+
+.tuksi-debug-content {
+	padding: 10px 10px;	
+}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		font: 11px verdana, sans-serif;
+	}
+	
+	table td {
+		background: #fff;
+		padding: 5px;
+	}
+	table .odd td {
+		background: #f5f5f5;
+	}
+
+	table .alert td {
+		background-color: #ed1c24;
+	}

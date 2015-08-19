@@ -1,0 +1,279 @@
+/* Tuksi Frontend - Stylesheet */
+/* RPE 25.01.06 */
+
+
+/* template elements */
+
+.main{
+width:809px;
+margin:0 auto;
+position:relative;
+background:#fff url(/images/mysite/backgrounds/bg_main.png) 0 203px no-repeat;
+}
+.frontpage .main{
+background-position:0 260px;
+}
+	.main .mainHeader{
+	height:203px;
+	position:relative;
+	background-color:#fff;
+	background-image:url(/images/mysite/pictures/pi_headerImageSubpages.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	}
+	.frontpage .mainHeader{
+	height:260px;
+	background-image:url(/images/mysite/pictures/pi_header_default.jpg);
+	}
+		.main .mainHeader img{
+		display:block;
+		}
+		
+		.main .mainHeader img.png{
+		_*behavior: url(/stylesheet/pngHack.htc);/*IE6&<*/
+		position:absolute;
+		bottom:37px;
+		left:0;
+		}
+		.frontpage .main .mainHeader img.png{
+		bottom:40px;
+		}
+		
+		
+/*##### MENU TOP #####*/
+		.main .mainHeader ul{
+		position:absolute;
+		bottom:0;
+		_*bottom:0px;
+		left:0;
+		list-style:none;
+		margin:0;
+		width:809px;
+		height:39px;
+		border-top:1px solid #e8e8e8;
+		background-color:#f7f7f7;
+		float:left;
+		}
+			.main .mainHeader ul li{
+			float:left;
+			/*5 buttons*/ width:162px;
+			/*4 buttons*/ width:198px;
+			height:39px;
+			}
+			/*Menu buttons*/
+			.main .mainHeader ul li.page1{
+			/*5 buttons*/ /*width:161px;*//*The width of the 5 menu-buttons dont add up, so the first one has to be 1px shorter*/
+			/*4 buttons*/ width:215px;/*The width of the 5 menu-buttons dont add up, so the first one has to be 1px shorter*/
+			}
+			.main .mainHeader ul li.page1 a{
+			/*4 buttons*/ width:215px;
+			}
+			.main .mainHeader ul li.page1{
+			}
+			.main .mainHeader ul li.page2{
+			}
+			.main .mainHeader ul li.page3{
+			}
+			.main .mainHeader ul li.page4{
+			}
+				.main .mainHeader ul li a{
+				/*5 buttons*/ width:161px;
+				/*4 buttons*/ width:198px;
+				color: #a8a8a8;
+				height:39px;
+				float:right;
+				text-align: center;
+				line-height: 39px;
+				font-size: 20px;
+				background-image:url(/images/mysite/menu/gx_pageAllLine.gif);
+				background-position:left bottom;
+				background-repeat:repeat-x;
+				outline:0;
+				text-decoration: none;
+				}
+				
+				.main .mainHeader ul li a.active,
+				.main .mainHeader ul li a:hover {
+				background-image:url(/images/mysite/menu/gx_pageAllActive.gif);
+				}
+
+			
+				
+				
+				
+					
+				
+/*##### LEFT #####*/				
+	.mainLeft{
+	width:215px;
+	float:left;
+	padding-top:29px;
+	}
+	
+	
+	
+/*##### MENU LEFT #####*/
+
+/*Level 2*/
+.mainLeft ul{
+width:100%;
+margin:0;
+list-style:none;
+float:left;
+background:#dfdfdf;
+}
+	.mainLeft ul li{
+	width:100%;
+	float:left;
+	}
+		.mainLeft ul li a{
+		display:block;
+		line-height:13px;
+		padding:6px 5px 6px 27px;
+		color:#333;
+		border-bottom:1px solid #f0f0f0;
+		}
+		.mainLeft ul li a:hover{
+		text-decoration:none;
+		color:#000;
+		background-color:#e4e4e4;
+		}
+		.mainLeft ul li a.active, 
+		.mainLeft ul li a.active:hover{
+		color:#e51837;
+		background:url(/images/mysite/menu/gx_subMenuActive.gif) repeat-y;
+		}
+/*Level 3*/
+		.mainLeft ul li ul{
+		background:#a8a8a8;
+		}
+			.mainLeft ul li ul li{
+			}
+				.mainLeft ul li ul li a{
+				color:#efefef;
+				padding:4px 5px 5px 42px;
+				border:0;
+				line-height:13px;
+				}
+				.mainLeft ul li ul li a:hover{
+				color:#fff;
+				background-color:#a4a4a4;
+				}
+				.mainLeft ul li ul li a.active, 
+				.mainLeft ul li ul li a.active:hover{
+				background:#878787;
+				color:#efefef;
+				}
+/*Level 4*/
+			.mainLeft ul li ul li ul{
+			background:url(/images/mysite/backgrounds/bg_leftMenuLevel4.gif) repeat-y;
+			}
+				.mainLeft ul li ul li ul li{
+				}
+					.mainLeft ul li ul li ul li a{
+					color:#878787;
+					padding:4px 5px 5px 57px;
+					border:0;
+					line-height:13px;
+					}
+					.mainLeft ul li ul li ul li a:hover{
+					color:#7b7b7b;
+					background-color:#d8d8d8;
+					}
+					.mainLeft ul li ul li ul li a.active, 
+					.mainLeft ul li ul li ul li a.active:hover{
+					background:url(/images/mysite/backgrounds/bg_leftMenuLevel4.gif) repeat-y;
+					color:#878787;
+					font-weight:bold;
+					}
+
+
+
+
+
+
+
+
+
+/*##### CONTENT #####*/
+		.mainContent{
+		width:556px;
+		float:right;
+		}
+		.frontpage .mainContent{
+		background: url(/images/mysite/backgrounds/bg_frontpage.png) no-repeat 0 0;
+		_*background-image: none;/*ie6&<*/
+		_*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mysite/backgrounds/bg_frontpage.png',sizingMethod='crop');/*ie6&<*/
+		}
+		.mainInnerContent{
+		width:505px;
+		_height:160px;/*IE5&6*/
+		min-height:160px;
+		float:left;
+		padding:44px 0;
+		}	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+/*##### INDHOLD #####*/
+
+		.mainInnerContent h1{
+		margin-bottom:15px;
+		}
+		
+		
+		
+		
+		
+/*##### INDHOLD #####*/
+	.mainFooter{
+	width:809px;
+	height:70px;
+	clear:both;
+	position:relative;
+	background:url(/images/mysite/backgrounds/bg_footer.png) top left no-repeat;
+	}
+		.mainFooter div{
+		position:relative;
+		width:595px;
+		top:40px;
+		left:215px;
+		text-align:center;
+		}
+			.mainFooter div span{
+			padding:9px;
+			font-size:10px;
+			color:#7a7a7a;
+			}
+			.mainFooter div span a{
+			font-size:10px;
+			color:#7a7a7a;
+			text-decoration:none;
+			}
+	.credit{
+	width:809px;
+	height:21px;
+	margin:auto;
+	clear:both;
+	position:relative;
+	}
+		.credit a.credit{
+		position:absolute;
+		bottom:7px;
+		right:10px;
+		background:url(/images/mysite/graphics/gx_credits.gif) no-repeat;
+		width:31px;
+		height:6px;
+		display:block;
+		font-size:0;/*ie6*/
+		}

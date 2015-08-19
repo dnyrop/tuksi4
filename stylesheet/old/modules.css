@@ -1,0 +1,145 @@
+/* Tuksi Frontend - Stylesheet */
+
+/* mFormbuilder - form builder and elements */
+.mFormbuilder {
+}
+.mFormbuilder input {
+	margin:0;
+	border:0;
+	padding:0;
+	font-size:11px;
+	font-family:tahoma, Arial, Helvetica, sans-serif;
+}
+
+	.mFormbuilder form {
+		padding: 9px 0 0;
+	}
+	.mFormbuilder .frmbElement {
+		padding: 0 7px 9px;
+		
+	}
+
+	.mFormbuilder table {
+		border-collapse: collapse;
+	}
+	.mFormbuilder td {
+		
+	}
+	.mFormbuilder ul {
+		margin: 0;
+		padding: 0;
+	}
+		.mFormbuilder li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			clear: both;
+			height: 18px;
+		}
+	.mFormbuilder label {
+		padding-right: 3px;
+		line-height: 16px;
+	}
+		.mFormbuilder label.fullLine {
+			display: block;
+		}
+	.mFormbuilder .frmbText input,
+	.mFormbuilder .frmbPersonals input,
+	.mFormbuilder .frmbTextarea textarea {
+		color: #675c4f;
+		border: 1px #003F2F solid;
+	}
+	.mFormbuilder .frmbText input {
+		height: 16px;
+	}
+
+	.mFormbuilder .frmIntro {
+		color: #C9C1B7;
+		padding: 0 0 5px 7px;
+	}
+	.mFormbuilder .error {
+		color: #820106;
+		display: block;
+		padding-left: 7px;
+	}
+	.mFormbuilder  {
+		
+	}
+	
+	
+		/* specific elements */
+		
+		.mFormbuilder .frmbImage {
+			padding-bottom: 9px;
+		}
+			.mFormbuilder .frmbImage img {
+				border: 1px #ffffff solid;
+				display: block;
+			}
+		
+		.mFormbuilder .frmbText,
+		.mFormbuilder .frmbTextarea,
+		.mFormbuilder .frmbCheckboxes,
+		.mFormbuilder .frmbRadios {
+			padding-left: 7px;
+		}
+		
+			.mFormbuilder .frmbRadios li label {
+				float: left;
+				padding: 0 0 0 5px;
+			}
+			.mFormbuilder .frmbRadios input {
+				margin-top: 3px;
+				float: left;
+				height: 13px;
+				width: 13px;
+			}
+
+		.mFormbuilder .frmbPersonals {
+			background: url(/images/backgrounds/formbuilder_gradient_2.jpg) repeat-x 0 0;
+			padding-top: 15px;
+		}
+		.mFormbuilder .frmbPersonals td {
+			padding-left: 14px;
+			padding-bottom: 6px;
+		}
+		.mFormbuilder .frmbPersonals label {
+			width: 100px;
+			display: block;
+		}
+		.mFormbuilder .frmbPersonals .spacing {
+			padding-right: 10px;
+		}
+		.mFormbuilder .frmbPersonals input {
+			width: 147px;
+		}
+		.mFormbuilder .frmbPersonals .error {
+			padding: 0;
+		}
+		.mFormbuilder .frmbPersonals .frmPostal {
+			width: 52px;
+		}
+		.mFormbuilder .frmbPersonals .frmCity {
+			width: 58px;
+		}
+		.mFormbuilder .frmbPersonals .lblCity {
+			width: 18px;
+		}
+		.mFormbuilder .frmbPersonals .tdCity {
+			padding-left:0;
+		}
+		
+		.mFormbuilder .frmbSubmit {
+			padding: 5px 9px 5px 0;
+			text-align: right;
+		}
+		.mFormbuilder .frmbSubmit input{
+			color:#fff;
+			background:#820106;
+			width:100px;
+			height:20px;
+			padding-bottom:5px;
+		}
+
+/* module elements */

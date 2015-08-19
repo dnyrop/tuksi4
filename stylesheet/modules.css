@@ -1,0 +1,1186 @@
+/* Tuksi 4 Frontend - Stylesheet */
+/* RPE 28.11.2007 */
+
+
+/* module elements */
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mFrontpageImage *****************************************************************************************/	
+/********************************************************************************************************************/
+.mFrontpageImage{
+width:100%;
+height:252px;
+overflow:hidden;
+position:relative;
+}
+	.mFrontpageImage img{
+	display:block;
+	height:250px;
+	width:100%;
+	margin-bottom:2px;
+	}
+	.mFrontpageImage .overlay{
+	background: url(/images/graphics/gx_mFrontpageImageOverlay.png);/*(Mozilla & IE7+)*/
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/graphics/gx_mFrontpageImageOverlay.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+	_*background:none;/*(IE6&<)*/
+	width:100%;
+	height:45px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	}
+	.mFrontpageImage .textBox{
+	width:459px;
+	height:77px;
+	position:absolute;
+	left:0;
+	top:122px;
+	}
+	.mFrontpageImage .textBox.right{/*right*/
+	width:480px;
+	height:87px;
+	left:auto;
+	right:0;
+	top:139px;
+	}
+		.mFrontpageImage .textBox .boxBg{
+		width:100%;
+		height:100%;
+		position:relative;
+		background: url(/images/backgrounds/bg_mFrontpageImageTextLeft.png);/*(Mozilla & IE7+)*/
+		_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/backgrounds/bg_mFrontpageImageTextLeft.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+		_*background:none;/*(IE6&<)*/
+		}
+		.mFrontpageImage .textBox.right .boxBg{/*right*/
+		background: url(/images/backgrounds/bg_mFrontpageImageTextRight.png);/*(Mozilla & IE7+)*/
+		_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/backgrounds/bg_mFrontpageImageTextRight.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+		_*background:none;/*(IE6&<)*/
+		}
+		.mFrontpageImage .textBox .textLine{
+		position:absolute;
+		top:20px;
+		left:33px;
+		line-height:19px;
+		color:#003a35;
+		width:333px;
+		height:44px;
+		overflow:hidden;
+		}
+		.mFrontpageImage .textBox.right .textLine{/*right*/
+		left:119px;
+		}
+			.mFrontpageImage .textBox .textLine a{
+			color:#13a89e;
+			padding-left:5px;
+			}
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mHeadline **********************************************************************************************/	
+/********************************************************************************************************************/
+	/* ! Modulet skal indenholde 2 x-input-felter. Det første skal være optional at udfylde, og skaber en anden farve.
+		 Det skal tilføjes som hjælpetekst, at det kun er på undersiderne der kan gøres brug af funktionen.	
+	*/
+.mHeadline{
+margin-bottom:15px;
+}
+	.mHeadline h1{
+	font:bold 18px/21px Arial, Helvetica, Verdana, sans-serif;
+	color:#024d47;
+	display:inline;
+	margin:0;
+	}
+	.mHeadline h1.firstWord{
+	color:#13a89e;
+	padding-right:5px;
+	}
+	.mHeadline h1.color2{
+	}
+	.frontpage .mHeadline h1{/*sIFR*/
+	font-size:17px;
+	position:relative;
+	}
+	.frontpage .sIFR-hasFlash .mHeadline h1{/*sIFR*/
+	visibility:hidden;
+	}
+	.frontpage .mHeadline h1.firstWord{/*sIFR*/
+	display:none;
+	}
+.twoColumnPage .pageColumn2 .mHeadline{
+width:444px; /*(the module's width may not be 100% here)*/
+}
+
+	
+	
+	
+	
+/********************************************************************************************************************/	
+/********** mFrontLeftTextImage (Forside) ***************************************************************************/	
+/********************************************************************************************************************/
+.mFrontLeftTextImage{
+margin-bottom:28px;
+}
+	.mFrontLeftTextImage h2{
+	margin-bottom:0;
+	color:#0a726b;
+	}
+	.mFrontLeftTextImage .textArea{
+	}
+	.mFrontLeftTextImage img{
+	display:block;
+	margin-top:17px;
+	}
+	.mFrontLeftTextImage a{
+	color:#40b5b1;
+	padding-left:3px;
+	font-size:11px;
+	}
+
+
+	
+	
+/********************************************************************************************************************/	
+/********** mFrontReferences (Forside) ******************************************************************************/	
+/********************************************************************************************************************/
+.mFrontReferences{
+margin-bottom:20px;
+position:relative;
+top:-3px;
+}
+	.mFrontReferences ul{
+	margin:0;
+	list-style:none;
+	}
+	.mFrontReferences ul li{
+	margin:0;
+	width:100%;
+	}
+	.mFrontReferences ul li img{
+	width:209px;
+	height:79px;
+	padding:3px;
+	background:url(/images/backgrounds/bg_mFrontReferencesImg.gif) no-repeat;
+	display:block;
+	margin-bottom:14px;
+	}
+	.mFrontReferences ul li div.link{
+	padding-top:11px;
+	}
+		.mFrontReferences ul li div.link a{
+		color:#fff;
+		font-size:11px;
+		}
+
+
+
+
+
+
+
+		
+		
+		
+/********************************************************************************************************************/	
+/********** mFrontRightNews (Forside) *******************************************************************************/	
+/********************************************************************************************************************/		
+.mFrontRightNews{
+}
+	.mFrontRightNews ul{
+	margin:0;
+	list-style:none;
+	}
+		.mFrontRightNews ul li{
+		margin:0 0 21px 0;
+		width:100%;
+		font-size:11px;
+		}
+			.mFrontRightNews ul li label{
+			display:block;
+			color:#fff;
+			}
+			.mFrontRightNews ul li strong{
+			display:block;
+			color:#003a35;
+			}
+			.mFrontRightNews ul li p{
+			display:block;
+			margin-bottom:0;
+			}
+			.mFrontRightNews ul li a{
+			color:#2dbeb2;
+			}
+
+
+
+
+
+	
+			
+			
+			
+/********************************************************************************************************************/	
+/********** mFrontRightLink (Forside) *******************************************************************************/	
+/********************************************************************************************************************/			
+.mFrontRightLink{
+}
+	.mFrontRightLink ul{
+	margin:0;
+	list-style:none;
+	padding-top:12px;
+	}
+		.mFrontRightLink ul li{
+		margin:0 0 20px 0;
+		width:169px;
+		padding:10px 0 15px 0;
+		cursor:pointer;
+		background:#d9ebec url(/images/backgrounds/bg_mFrontRightLink.png) 0 100% no-repeat;
+		border-top:1px solid #b3c6c6;
+		}
+			.mFrontRightLink ul li h1{
+			color:#2d5d5a;
+			margin-left:18px;
+			margin-bottom:5px;
+			}
+			.mFrontRightLink ul li label{
+			font-size:11px;
+			color:#fff;
+			display:block;
+			margin:0 20px 0 68px;
+			}
+			.mFrontRightLink ul li a{
+			color:#207f78;
+			display:block;
+			margin:0 20px 0 68px;
+			}
+
+
+
+
+			
+			
+/********************************************************************************************************************/	
+/********** mIntroText **********************************************************************************************/	
+/********************************************************************************************************************/				
+.mIntroText{
+font-weight:bold;
+color:#0a726b;
+font-size:14px;
+line-height:17px;
+margin-bottom:35px;
+}
+	.mIntroText strong{
+	}
+.twoColumnPage .pageColumn2 .mIntroText{
+width:444px; /*(the module's width may not be 100% here)*/
+}
+
+
+	
+	
+	
+	
+	
+	
+/********************************************************************************************************************/	
+/********** mText ***************************************************************************************************/	
+/********************************************************************************************************************/	
+.mText{
+margin-bottom:21px;
+}
+.twoColumnPage .pageColumn2 .mText{
+width:444px; /*(the module's width may not be 100% here)*/
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mImageWide **********************************************************************************************/	
+/********************************************************************************************************************/
+.mImageWide{
+clear: both;
+width:411px;
+margin-bottom:12px
+}
+	.mImageWide img{
+	width:411px;
+	display:block;
+	border-top:1px solid #c9d3d4;
+	border-bottom:2px solid #fffbc4;
+	}
+	.mImageWide span{
+	display:block;
+	background:#f3f8f9 url(/images/backgrounds/bg_imageText.png) 0 100% repeat-x;
+	color:#a2a3a3;
+	font-size:11px;
+	line-height:14px;
+	padding:7px 10px 12px 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mTopImage ***********************************************************************************************/	
+/********************************************************************************************************************/
+/*(skal placeres som det første modul i Column 2. Strækker sig automatisk over column 3)*/
+.mTopImage{
+width:731px;
+height:248px;
+position:relative;
+left:-38px;
+top:-86px;
+margin-bottom:-46px;
+margin-right:-316px;
+}
+	.mTopImage img{
+	display:block;
+	}
+	.mTopImage .overlayTop{
+	width:731px;
+	height:44px;
+	background: url(/images/graphics/gx_mTopImageOverlayTop.png);/*(Mozilla)*/
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/graphics/gx_mTopImageOverlayTop.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+	_*background:none;/*(IE6&<)*/
+	position:absolute;
+	top:0;
+	left:0;
+	}
+	.mTopImage .overlayBottom{
+	width:731px;
+	height:40px;
+	background: url(/images/graphics/gx_mTopImageOverlayBottom.png);/*(Mozilla)*/
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/graphics/gx_mTopImageOverlayBottom.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+	_*background:none;/*(IE6&<)*/
+	position:absolute;
+	bottom:0;
+	left:0;
+	}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+/********************************************************************************************************************/	
+/********** mSubRightLinkList ***************************************************************************************/	
+/********************************************************************************************************************/	
+.mSubRightLinkList{
+width:187px;
+border:1px solid #c9d4d6;
+background:#d1dfde;
+margin-bottom:13px;
+filter:alpha(opacity=95);
+-moz-opacity:0.95;
+opacity:0.95;
+}
+	.mSubRightLinkList .mInner{
+	width:154px;
+	padding:12px 12px 12px 18px;
+	border-top:2px solid #fefac6;
+	margin-right:3px;
+	background:#e7f1f2 url(/images/backgrounds/bg_mSubRightLinkList.png) repeat-x;
+	}
+	.mSubRightLinkList .mInner h1{
+	color:#194d49;
+	margin-bottom:0;
+	}
+	.mSubRightLinkList .mInner ul{
+	list-style:none;
+	margin:0;
+	padding-top:4px;
+	margin-bottom:3px;
+	}
+		.mSubRightLinkList .mInner ul li{
+		color:#0a726b;
+		width:100%;
+		float:left;
+		margin-bottom:0;
+		line-height:14px;
+		}
+			.mSubRightLinkList .mInner ul li a{
+			color:#0a726b;
+			display:block;
+			line-height:14px;
+			padding:2px 2px 1px 21px;
+			margin-top:10px;
+			*margin-top:7px;/*(IE)*/
+			background:url(/images/icons/ic_downloadSheet.png) 1px 2px no-repeat;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/********************************************************************************************************************/	
+/********** mSubRightList *******************************************************************************************/	
+/********************************************************************************************************************/	
+.mSubRightList{
+width:187px;
+border:1px solid #c7d2d4;
+background:#d0dedd;
+filter:alpha(opacity=95);
+-moz-opacity:0.95;
+opacity:0.95;
+margin-bottom:13px;
+}
+	.mSubRightList .mInner{
+	width:154px;
+	padding:12px 12px 0px 18px;
+	border-top:2px solid #fefac6;
+	margin-right:3px;
+	background:#e7f1f2 url(/images/backgrounds/bg_mSubRightList.png) repeat-x;
+	}
+	.mSubRightList .mInner h1{
+	color:#13a89e;
+	margin-bottom:0;
+	margin-bottom:9px;
+	}
+	.mSubRightList .mInner ul{
+	list-style:none;
+	margin:0;
+	padding-top:4px;
+	margin-bottom:15px;
+	}
+		.mSubRightList .mInner ul li{
+		color:#7c7c7c;
+		padding-left:12%;
+		background:url(/images/graphics/gx_bulletSquareType2.png) 1px 4px no-repeat;
+		margin:0.3em 0 1em 0;
+		display:block;
+		width:88%;
+		line-height:15px;
+		}
+				.mSubRightList ul li ul li{
+				color:#848585;
+				background-position:1% -495px;
+				}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mTextImageLeft *******************************************************************************************/	
+/********************************************************************************************************************/	
+.mTextImageLeft{
+  clear: both;
+  margin-bottom: 1em;
+}
+	.mTextImageLeft .image{
+	width:195px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:8px;
+	}
+		.mTextImageLeft .image img{
+		width:195px;
+		display:block;
+		border-top:1px solid #c9d3d4;
+		border-bottom:2px solid #fffbc4;
+		}
+		.mTextImageLeft .image span{
+		display:block;
+		background:#f3f8f9 url(/images/backgrounds/bg_imageText.png) 0 100% repeat-x;
+		color:#a2a3a3;
+		font-size:11px;
+		line-height:14px;
+		padding:7px 10px 12px 10px;
+		}
+	.mTextImageLeft .text{
+	margin-top:-3px;
+	}
+.twoColumnPage .pageColumn2 .mTextImageLeft{
+width:444px; /*(the module's width may not be 100% here)*/
+}
+
+	
+	
+	
+/********************************************************************************************************************/	
+/********** mTextImageRight *****************************************************************************************/	
+/********************************************************************************************************************/	
+.mTextImageRight{
+  clear: both;
+}
+	.mTextImageRight .image{
+	width:205px;
+	float:right;
+	margin-left:20px;
+	margin-bottom:8px;
+	}
+		.mTextImageRight .image img{
+		width:205px;
+		display:block;
+		border-top:1px solid #c9d3d4;
+		border-bottom:2px solid #fffbc4;
+		}
+		.mTextImageRight .image span{
+		display:block;
+		background:#f3f8f9 url(/images/backgrounds/bg_imageText.png) 0 100% repeat-x;
+		color:#a2a3a3;
+		font-size:11px;
+		line-height:14px;
+		padding:7px 10px 12px 10px;
+		}
+	.mTextImageRight .text{
+	margin-top:-3px;
+	}
+.twoColumnPage .pageColumn2 .mTextImageRight{
+width:444px; /*(the module's width may not be 100% here)*/
+}
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mQuote **************************************************************************************************/	
+/********************************************************************************************************************/	
+.mQuote{
+clear:both;
+border-left:3px solid #94c2bf;
+padding-left:21px;
+margin-bottom:22px;
+margin-top:20px;
+}
+	.mQuote h1{
+	font-size:18px;
+	line-height:22px;
+	font-style:italic;
+	color:#ababab;
+	margin-bottom:5px;
+	font-weight:normal;
+	}
+	.mQuote label{
+	font-size:12px;
+	color:#ababab;
+	}
+
+
+
+
+
+
+
+	
+/********************************************************************************************************************/	
+/********** mBugReporter ********************************************************************************************/	
+/********************************************************************************************************************/	
+.mFormular{
+width:415px;
+padding-top:20px;
+margin-bottom:50px;
+position:relative;
+clear:both;
+}
+	.mFormular h3{
+	font-weight:bold;
+	color:#40b5b1;
+	}
+	.mFormular .fieldset{
+	width:100%;
+	border-top:1px solid #bcd9d9;
+	border-bottom:1px solid #c2dcda;
+	margin-bottom:33px;
+	padding-bottom:8px;
+	}
+		.mFormular .fieldset table{
+		width:100%;
+		background:#fff url(/images/backgrounds/bg_mFormular.png) repeat-x;
+		}
+			.mFormular .fieldset table td.column1{
+			width:90px;
+			padding:12px 10px 3px 15px;
+			vertical-align:top;
+			}
+			.mFormular .fieldset table td.column2{
+			width:271px;
+			padding:12px 14px 3px 15px;
+			vertical-align:top;
+			}
+			.mFormular .fieldset table td.column1 label{
+			font-weight:bold;
+			color:#0a726b;
+			display:block;
+			margin-top:2px;
+			}
+			.mFormular .fieldset table td.column1 em{
+			color:#a2a3a3;
+			font-size:11px;
+			font-style:normal;
+			}
+			.mFormular .fieldset table td.column2 .borderLine{
+			background:#fffbc4;
+			height:1px;
+			overflow:hidden;
+			font-size:0;
+			*margin-top:-1px;
+			}
+			.mFormular .fieldset table td.column2 .borderWrapper{
+			border-bottom:1px solid #fffbc4;
+			float:left;
+			}
+				.mFormular .fieldset table td.column2 textarea{
+				width:267px;
+				height:167px;
+				color:#626262;
+				padding:0 0 0 2px;
+				border:1px solid #b5b5b5;		
+				}
+				.mFormular .fieldset table td.column2 select{
+				}
+				.mFormular .fieldset table td.column2 input.text{
+				width:265px;
+				}
+			.mFormular .fieldset table td.column2 span.info{
+			font-size:11px;
+			line-height:12px;
+			margin-top:2px;
+			display:block;
+			color:#a2a3a3;
+			}
+	.mFormular .buttonRow{
+	float:right;
+	width:100%;
+	margin-top:-10px;
+	}
+		.mFormular .buttonRow em{
+		float:left;
+		font-size:11px;
+		color:#a2a3a3;
+		}
+		.mFormular .buttonRow a{
+		float:right;
+		}
+	.mFormular strong.error{
+	color:#9a0e46;
+	position:relative;
+	display:block;
+	top:-20px;
+	margin-bottom:20px;
+	}
+		.mFormular .fieldset table td.column2 textarea.error{
+		border-color:#9a0e5a;
+		}
+		.mFormular .fieldset table td.column2 input.text.error{
+		border:1px solid #9a0e5a;
+		padding:2px;
+		}
+		.mFormular .fieldset table td.column2 span.error{
+		font-size:11px;
+		line-height:12px;
+		margin-top:2px;
+		display:block;
+		color:#9a0e5a;
+		}
+
+
+
+		
+		
+		
+		
+		
+/********************************************************************************************************************/	
+/********** mForumEntry *********************************************************************************************/	
+/********************************************************************************************************************/			
+.mForumEntry{
+width:100%;
+}
+	.mForumEntry ul.list{
+	list-style:none;
+	margin:0;
+	width:100%;
+	float:left;
+	}
+		.mForumEntry ul.list li.entry{
+		width:100%;
+		float:left;
+		margin-bottom:25px;
+		background:#fff url(/images/backgrounds/bg_mForumEntry.png) 0 100% no-repeat;
+		padding-bottom:12px;
+		}
+			.mForumEntry ul.list li.entry .left{
+			float:left;
+			width:445px;
+			border-top:1px solid #e8e8e8;
+			}
+				.mForumEntry ul.list li.entry .left .text{
+				position:relative;
+				top:14px;
+				left:12px;
+				width:400px;
+				padding-bottom:5px;
+				}
+			.mForumEntry ul.list li.entry .right{
+			float:left;
+			width:200px;
+			padding:13px 8px 0 10px;
+			border-top:1px solid #e8e8e8;
+			background:url(/images/backgrounds/bg_mForumEntryRight.png) 0 0 no-repeat;
+			}
+					
+				.mForumEntry ul.list li.entry .right h2{
+				margin-bottom:0px;
+				color:#024d47;
+				}
+				.mForumEntry ul.list li.entry .right label{
+				color:#ababab;
+				}
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+/********************************************************************************************************************/	
+/********** mForumListView ******************************************************************************************/	
+/********************************************************************************************************************/				
+.mForumListView{
+width:651px;
+}
+	.mForumListView .introText{
+	width:444px;
+	margin-bottom:30px;
+	}
+	.mForumListView a.createEntry{
+	float:right;
+	}	
+	.mForumListView .header{
+	border-bottom:1px solid #bbd9d8;
+	width:100%;
+	margin-bottom:-3px;
+	cursor:default;
+	}		
+		.mForumListView .header h3{
+		float:left;
+		color:#40b5b1;
+		font-size:13px;
+		width:370px;
+		}
+		.mForumListView .header span{
+		float:left;
+		color:#595858;
+		font-size:11px;
+		width:84px;
+		}
+		.mForumListView .header strong{
+		float:left;
+		color:#595858;
+		font-size:11px;
+		width:148px;
+		}
+		.mForumListView .header label{
+		float:left;
+		color:#595858;
+		font-size:11px;
+		width:48px;
+		}
+	.mForumListView ul{
+	width:629px;
+	padding:0 12px 0 10px;
+	list-style:none;
+	margin:0;
+	background:#fffff7;
+	border-top:2px solid #fffbc4;
+	border-bottom:1px solid #ddece8;
+	margin-bottom:10px;
+	float:left;
+	}
+		.mForumListView ul li{
+		padding:18px 0 13px 0;
+		margin:0;
+		width:629px;
+		float:left;
+		height:1%;
+		zoom:1;
+		position:relative;
+		border-bottom:1px solid #ddece8;
+		cursor:pointer;
+		margin-bottom:-1px;
+		}
+		.mForumListView ul li:hover{
+		background:#f2f8f2;
+		}
+			.mForumListView ul li h4{
+			float:left;
+			color:#0a726b;
+			font-size:11px;
+			width:338px;
+			padding: 0 20px 0 5px;
+			position:relative;
+			}
+			.mForumListView ul li h4 a{
+			text-decoration:none;
+			color:#0a726b;
+			}
+		.mForumListView ul li:hover h4, 
+		.mForumListView ul li:hover h4 a{
+		color:#13a89e;
+		}
+			.mForumListView ul li h4 a:visited{
+			font-weight:normal;
+			}
+			.mForumListView ul li span{
+			float:left;
+			color:#a2a3a3;
+			font-size:11px;
+			width:82px;
+			position:relative;
+			}
+			.mForumListView ul li strong{
+			float:left;
+			color:#a2a3a3;
+			font-size:11px;
+			width:125px;
+			font-weight:normal;
+			position:relative;
+			}
+			.mForumListView ul li label{
+			float:left;
+			color:#a2a3a3;
+			font-size:11px;
+			width:58px;
+			position:relative;
+			}	
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mListNavigation *****************************************************************************************/	
+/********************************************************************************************************************/	
+.mListNavigation{
+width:651px;
+margin-bottom:20px;
+}
+	.mListNavigation ul{
+	width:100%;
+	margin:0;
+	list-syle:none;
+	text-align:center;
+	}
+		.mListNavigation ul li{
+		display:inline;
+		font-size:11px;
+		padding:0 1px;
+		color:#bab9b9;
+		cursor:default;
+		}
+			.mListNavigation ul li a{
+			font-size:11px;
+			padding:0 2px;
+			cursor:pointer;
+			}
+		.mListNavigation ul li.prev{
+		float:left;
+		}
+		.mListNavigation ul li.next{
+		float:right;
+		}
+		.mListNavigation ul li.active{
+		color:#0a726b;
+		padding-right:3px;
+		padding-left:3px;
+		}
+			.mListNavigation ul li a:visited{
+			color:#9bd1cf;
+			}
+		
+
+
+
+			
+/********************************************************************************************************************/	
+/********** mTuksiList ********************************************************************************************/	
+/********************************************************************************************************************/				
+.mTuksiList{
+width:651px;
+margin-bottom:25px;
+cursor:default;
+}	
+	.mTuksiList ul{
+	margin:0;
+	list-style:none;
+	width:100%;
+	float:left;
+	}		
+		.mTuksiList ul li{
+		width:100%;
+		float:left;
+		overflow:hidden;
+		border-bottom:1px solid #c2dcd4;
+		margin-bottom:24px;
+		}
+			.mTuksiList ul li img.icon{
+			width:60px;
+			height:44px;
+			float:right;
+			border-bottom:1px solid #add1d2;
+			}
+			.mTuksiList ul li h3{
+			width:587px;
+			padding-left:4px;
+			height:22px;
+			line-height:17px;
+			padding-top:22px;
+			color:#40b5b1;
+			float:left;
+			border-bottom:1px solid #add1d2;
+			margin:0;
+			}
+			.mTuksiList ul li ul{
+			width:642px;
+			padding-left:14px;
+			background:#fffff7;
+			border-top:1px solid #fffbc4;
+			padding-top:12px;
+			}
+				.mTuksiList ul li ul li{
+				width:193px;
+				margin-right:21px;
+				border-top:none;
+				border-bottom:none;
+				background:none;
+				margin-bottom:0;
+				cursor:pointer;
+				}
+					.mTuksiList ul li ul li h4{
+					margin-bottom:1px;
+					color:#0a726b;
+					}
+						.mTuksiList ul li ul li h4 a{
+						text-decoration:none;
+						color:#0a726b;
+						}
+					.mTuksiList ul li ul li p{
+					margin-bottom:16px;
+					border-bottom:1px solid #ddece8;
+					padding-bottom:12px;
+					font-size:11px;
+					color:#a2a3a3;
+					}
+						.mTuksiList ul li ul li p span {
+						padding:0 12px;
+						line-height:7px;
+						font-size:7px;
+						background:url(/images/graphics/gx_listArrow.png) no-repeat;
+						}
+						
+						.mTuksiList ul li ul li .no {
+						  padding-bottom: 5px;
+						}
+						
+    					.mTuksiList ul li ul li .no span {
+    					  background: none;
+    					} 
+						
+				.mTuksiList ul li ul li:hover h4 a{ /*( error apears in IE6 on hover)*/
+				text-decoration:underline;
+				}
+			.mTuksiList ul li img.icon.type1{
+			background: url(/images/icons/ic_moduleType1.png);/*(Mozilla)*/
+			_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/ic_moduleType1.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+			_*background:none;/*(IE6&<)*/
+			}
+			.mTuksiList ul li img.icon.type2{
+			background: url(/images/icons/ic_moduleType2.png);/*(Mozilla)*/
+			_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/ic_moduleType2.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+			_*background:none;/*(IE6&<)*/
+			}
+			.mTuksiList ul li img.icon.type3{
+			background: url(/images/icons/ic_moduleType3.png);/*(Mozilla)*/
+			_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/ic_moduleType3.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+			_*background:none;/*(IE6&<)*/
+			}
+			.mTuksiList ul li img.icon.type4{
+			background: url(/images/icons/ic_moduleType4.png);/*(Mozilla)*/
+			_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/ic_moduleType4.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+			_*background:none;/*(IE6&<)*/
+			}
+			.mTuksiList ul li img.icon.type5{
+			background: url(/images/icons/ic_moduleType5.png);/*(Mozilla)*/
+			_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/ic_moduleType5.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+			_*background:none;/*(IE6&<)*/
+			}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** mImageGallery *******************************************************************************************/	
+/********************************************************************************************************************/	
+
+.mImageGallery{
+}
+	.mImageGallery h2{
+	font-size:14px;
+	color:#40b5b1;
+	}
+	.mImageGallery ul{
+	width:687px;
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:10px 0 20px 7px;
+	background:#f7f8fa url(/images/backgrounds/bg_mImageGallery.png) repeat-x;
+	}
+		.mImageGallery ul li{
+		width:223px;
+		height:186px;
+		position:relative;
+		float:left;
+		margin-right:6px;
+		margin-bottom:14px;
+		background:url(/images/backgrounds/bg_mImageGalleryItem.png) repeat-x;
+		}
+			.mImageGallery ul li img.image{
+			display:block;
+			position:relative;
+			top:6px;
+			left:6px;
+			}
+			.mImageGallery ul li .imageText{
+			width:221px;
+			height:60px;
+			position:absolute;
+			top:119px;
+			left:1px;
+			background:url(/images/backgrounds/bg_mImageGalleryText.png) repeat-x;
+			}
+				.mImageGallery ul li .imageText a.link{
+				cursor:pointer;
+				}
+				.mImageGallery ul li .imageText a.link img{
+				width:25px;
+				height:25px;
+				position:relative;
+				*display:block;/*(IE)*/
+				z-index:100;
+				top:0;
+				left:0;
+				}
+				.mImageGallery ul li .imageText span{
+				width:208px;
+				height:30px;
+				position:relative;
+				top:3px;
+				left:8px;
+				color:#a2a3a3;
+				line-height:15px;
+				overflow:hidden;
+				display:block;
+				}
+
+
+
+/* MODULE HEADLINES */
+
+.mTextImageLeft h1,
+.mTextImageRight h1{
+margin-bottom:7px;
+font-size:18px;
+color:#024d47;
+font-weight:bold;
+}
+.mTextImageLeft h2,
+.mTextImageRight h2{
+margin-bottom:4px;
+color:#40b5b1;
+font-size:13px;
+font-weight:bold;
+}
+.mTextImageLeft h3,
+.mTextImageRight h3{
+margin-bottom:3px;
+color:#40b5b1;
+font-size:12px;
+font-weight:bold;
+}
+
+  .frontpage .mTextImageLeft h3,
+  .frontpage .mTextImageRight h3 {
+    color: #0A726B;
+  }
+  
+.mTextImageLeft h4,
+.mTextImageRight h4{
+margin-bottom:2px;
+color:#40b5b1;
+font-size:11px;
+font-weight:bold;
+}
+.mTextImageLeft h5,
+.mTextImageRight h5{
+margin-bottom:2px;
+color:#40b5b1;
+font-size:11px;
+font-weight:normal;
+}
+.mTextImageLeft h6,
+.mTextImageRight h6{
+margin-bottom:1px;
+color:#40b5b1;
+font-size:10px;
+font-weight:bold;
+}
+
+

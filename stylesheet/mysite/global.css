@@ -1,0 +1,99 @@
+/* Tuksi Frontend - Stylesheet */
+/* RPE 25.01.06 */
+
+
+/* resetting elements and setting font */
+* {
+	margin:0;
+	border:0;
+	padding:0;
+	font-size:11px;
+	font-family:Tahoma, Arial, Verdana, Geneva, Helvetica, Sans-Serif;
+	line-height:15px;
+	color:#333;
+}
+
+
+/* setting mixed properties */
+body {
+	background:#757575 url(/images/mysite/backgrounds/bg_body.jpg) repeat-x;
+	text-align:center;
+	overflow: -moz-scrollbars-vertical;
+}
+
+body.credits {
+	overflow:hidden;
+}
+
+body * {
+	text-align:left;
+}
+
+.clr{
+clear:both;
+height:1px;
+overflow:hidden;
+margin-top:-1px;
+}
+												/* These are standard sIFR styles... do not modify */
+												
+												.sIFR-flash {
+													visibility: visible !important;
+													margin: 0;
+												}
+												
+												.sIFR-replaced {
+													visibility: visible !important;
+												}
+												
+												span.sIFR-alternate {
+													position: absolute;
+													left: 0;
+													top: 0;
+													width: 0;
+													height: 0;
+													display: block;
+													overflow: hidden;
+												}
+												
+												/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+												.sIFR-flash + div[adblocktab=true] {
+												  display: none !important;
+												}
+
+/* setting standard elements */
+
+p {}
+
+h1 {
+font-size:14px;
+font-weight:normal;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+strong{
+font-weight:bold;
+}
+ul {
+}
+
+ol {
+}
+
+	li {}
+	
+a{
+	color:#e51837;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+

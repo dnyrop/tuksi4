@@ -1,0 +1,510 @@
+/* Tuksi 4 Frontend - Stylesheet */
+/* RPE 28.11.2007 */
+
+
+/* Template elements */
+
+/********************************************************************************************************************/	
+/********** Main & Page Types ***************************************************************************************/	
+/********************************************************************************************************************/	
+.wrapper{
+background:url(/images/backgrounds/bg_wrapper.jpg) repeat-x;
+}
+	.main {
+	margin:auto;
+	text-align:left;
+	position:relative;
+	width:946px;
+	padding:0 15px 15px 15px;
+	background:#fff;
+	}
+	
+		.main .pageType{/*Global Settings*/
+		width:100%;
+		overflow:hidden;
+		}
+			.pageColumn1{
+			float:left;
+			position:relative;
+			min-height:20px;/*mozilla no-collapse*/
+			}
+			.pageColumn2{
+			float:left;
+			position:relative;
+			min-height:20px;/*mozilla no-collapse*/
+			}
+			.pageColumn3{
+			float:left;
+			position:relative;
+			min-height:20px;/*mozilla no-collapse*/
+			}
+			
+		/*Frontpage*/
+		.main .pageType.frontpage{/*Forside*/
+		background:url(/images/backgrounds/bg_frontpage.png) no-repeat;
+		}
+			.main .pageType.frontpage .pageColumn1{/*Forside*/
+			width:391px;
+			left:38px;
+			padding-top:40px;
+			padding-bottom:50px;
+			}
+			.main .pageType.frontpage .pageColumn2{/*Forside*/
+			width:215px;
+			left:103px;
+			padding-top:13px;
+			padding-bottom:31px;
+			}
+			.main .pageType.frontpage .pageColumn3{/*Forside*/
+			width:169px;
+			left:146px;
+			margin-top:-5px;
+			padding-bottom:20px;
+			}
+			
+		/*Subpage 3 Columns*/	
+		.main .pageType.threeColumnPage{/*Normal Subpage (3 Columns)*/
+		background:url(/images/backgrounds/bg_threeColumnPage.png) 0 0 no-repeat;
+		}	
+			.main .pageType.threeColumnPage .pageInner{/*background issue*/
+			padding-bottom: 20px;
+			background:url(/images/backgrounds/bg_threeColumnPageInner.png) 0 0 no-repeat;
+			}
+				.main .pageType.threeColumnPage .pageColumn1{/*(3 Columns)*/
+				width:188px;
+				left:13px;
+				padding-top:45px;
+				}
+				.main .pageType.threeColumnPage .pageColumn23Wrapper{/*This wrapper-element is added only to enable the position of the "pageColumn23Bottom" element*/
+				float:left;
+				}
+					.main .pageType.threeColumnPage .pageColumn2{/*(3 Columns)*/
+					width:415px;
+					left:65px;
+					z-index:0;
+					padding-top:86px;
+					}
+					.main .pageType.threeColumnPage .pageColumn3{/*(3 Columns)*/
+					width:189px;
+					left:125px;
+					z-index:1;
+					padding-top:68px;
+					}
+					.main .pageType.threeColumnPage .pageColumn23Bottom{/*(3 Columns Bottom)*/
+					position:relative;
+					left:51px;
+					margin-right:-92px;
+					padding-top: 50px;
+					width:695px;
+					}
+			
+			
+		/*Subpage 2 Columns*/
+		.main .pageType.twoColumnPage{/*Normal Subpage (2 Columns)*/
+		background:url(/images/backgrounds/bg_threeColumnPage.png) 0 0 no-repeat;
+		}	
+			.main .pageType.twoColumnPage .pageInner{/*background issue*/
+			padding-bottom: 20px;
+			background:url(/images/backgrounds/bg_threeColumnPageInner.png) 0 0 no-repeat;
+			}
+				.main .pageType.twoColumnPage .pageColumn1{/*(2 Columns)*/
+				width:188px;
+				left:13px;
+				padding-top:45px;
+				padding-bottom:150px;
+				}
+				.main .pageType.twoColumnPage .pageColumn2{/*(2 Columns)*/
+				width:664px;
+				left:65px;
+				z-index:0;
+				padding-top:86px;
+				}
+				.main .pageType.twoColumnPage .pageColumn3{/*(2 Columns)*/
+				/*there is no column 3*/
+				}
+		
+	
+	
+	
+	
+/********************************************************************************************************************/	
+/********** Main Header *********************************************************************************************/	
+/********************************************************************************************************************/	
+		.mainHeader{
+		height:88px;
+		padding-top:15px;
+		width:100%;
+		overflow:hidden;
+		background:url(/images/backgrounds/bg_mainHeader.png) 0 0 repeat-x;
+		}
+			.mainHeader img.logo{
+			border-right:5px solid #fff;
+			float:left;
+			}
+			
+		
+		
+		
+		
+		
+		
+		
+/********************************************************************************************************************/	
+/********** Main Menu (Top) *****************************************************************************************/	
+/********************************************************************************************************************/	
+			.mainHeader ul.mainMenu{
+			margin:0;
+			list-style:none;
+			height:78px;
+			border-left:10px solid #fff;
+			border-right:1px solid #f4f4f4;
+			float:left;
+			position:relative;
+			top:-15px;
+			}
+				.mainHeader ul.mainMenu li{
+				margin:0;
+				float:left;
+				}
+				
+					.mainHeader ul.mainMenu li a{
+					float:left;
+					width:98px;
+					height:26px;
+					padding-top:52px;
+					background:url(/images/menu/bg_mainMenu.png) 0 0 no-repeat;
+					text-align:center;
+					text-decoration:none;
+					text-transform:uppercase;
+					font:normal 10px/12px Tahoma, Helvetica, Arial, Verdana, sans-serif;
+					color:#757373;
+					}				
+					.mainHeader ul.mainMenu li a:hover{
+					background-position:0 -100px;
+					color:#003a35;
+					height:34px;
+					padding-top:44px;
+					}
+					.mainHeader ul.mainMenu li.first a:hover{
+					background-position:0 -200px;
+					}
+					.mainHeader ul.mainMenu li a.active, 
+					.mainHeader ul.mainMenu li a.active:hover{
+					background-position:0 -100px;
+					color:#003a35;
+					height:34px;
+					padding-top:44px;
+					}
+					.mainHeader ul.mainMenu li.first a.active, 
+					.mainHeader ul.mainMenu li.first a.active:hover{
+					background-position:0 -200px;
+					}
+				
+					
+
+				
+				
+				
+				
+				
+				
+				
+/********************************************************************************************************************/	
+/********** specialMenu (Top) ***************************************************************************************/	
+/********************************************************************************************************************/					
+			.mainHeader ul.specialMenu{
+			margin:0;
+			list-style:none;
+			float:right;
+			}
+				.mainHeader ul.specialMenu li{
+				float:left;
+				margin:0;
+				}
+					.mainHeader ul.specialMenu li a{
+					float:left;
+					color:#076861;
+					font:normal 11px/13px Arial, Verdana, sans-serif;
+					text-decoration:none;
+					}		
+					.mainHeader ul.specialMenu li a:hover{
+					text-decoration:underline;	
+					}	
+		
+/********************************************************************************************************************/	
+/********** Sub Menu (Left) *****************************************************************************************/	
+/********************************************************************************************************************/	
+.subMenu{
+width:188px;
+float:left;
+}
+	.subMenu ul{/*Sub 1*/
+	margin:0;
+	list-style:none;
+	float:left;
+	width:100%;
+	}
+		.subMenu ul li{/*Sub 1*/
+		margin:0;
+		width:100%;
+		float:left;
+		border-bottom:1px solid #d9e9e9;
+		}
+			.subMenu ul li a{/*Sub 1*/
+			text-decoration:none;
+			font:normal 11px/14px Tahoma, Arial, Verdana, sans-serif;
+			text-transform:uppercase;
+			color:#0a726b;
+			display:block;
+			background-color:#fff;
+			width:160px;
+			padding-top:8px;
+			padding-right:14px;
+			padding-bottom:9px;
+			padding-left:14px;
+			float:left;
+			}
+			.subMenu ul li a:hover{/*Sub 2*/
+			background-color:#deeeef;
+			}
+		.subMenu ul li.active{
+		border-bottom:none;
+		border-top:1px solid #f4f4f4;
+		border-bottom:1px solid #f4f4f4;
+		position:relative;
+		top:-1px;
+		margin-bottom:-1px;
+		}
+			.subMenu ul li.active a, 
+			.subMenu ul li.active a:hover{/*Sub 2*/
+			color:#0ca49a;
+			background:#fff url(/images/menu/bg_subMenuLevel1Active.png) 0 0 repeat-y;
+			}
+			.subMenu ul li ul{/*Sub 2*/
+			padding-top:3px;
+			padding-bottom:4px;
+			background:url(/images/menu/bg_subMenuLevel2.png) 0 0 repeat-y;
+			}
+				.subMenu ul li ul li{/*Sub 2*/
+				border:none;
+				}
+					.subMenu ul li ul li a, 
+					.subMenu ul li.active ul li  a{/*Sub 2*/
+					color:#448884;
+					text-transform:none;
+					background:none;
+					width:142px;
+					padding-top:3px;
+					padding-right:14px;
+					padding-bottom:4px;
+					padding-left:32px;
+					}
+					.subMenu ul li ul li a:hover, 
+					.subMenu ul li.active ul li a:hover{/*Sub 2*/
+					color:#13a89e;
+					background:none;
+					}
+				.subMenu ul li ul li.active{
+				border:none;
+				top:0;
+				margin-bottom:0;
+				}
+					.subMenu ul li ul li.active a, 
+					.subMenu ul li ul li.active a:hover{/*Sub 2*/
+					color:#13a89e;
+					font-weight:bold;
+					}
+	.subMenu .bottom{
+	height:152px;
+	width:100%;
+	float:left;
+	background:url(/images/menu/bg_subMenuBottom.png) no-repeat;
+	_*filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/menu/bg_subMenuBottom.png', enabled='true', sizingMethod='crop');/*(IE6&<)*/
+	_*background:none;/*(IE6&<)*/
+	}
+/****** Icon Types *******/
+	/*(Hvis der forefindes ikoner til sublevel-1, tilføjes multi-classen "icon type1", "icon type2", etc. til <a> tagget)
+	  (Der eksisterer en PSD fil til formålet)*/
+			.subMenu ul li a.icon{
+			background-position:0 100%;
+			background-repeat:no-repeat;
+			}
+			.subMenu ul li a.icon:hover{
+			background-position:-200px 100%;
+			}
+			.subMenu ul li a.icon.type1{background-image:url(/images/menu/ic_subMenu_type1.png);}
+			.subMenu ul li a.icon.type2{background-image:url(/images/menu/ic_subMenu_type2.png);}
+			.subMenu ul li a.icon.type3{background-image:url(/images/menu/ic_subMenu_type3.png);}
+			.subMenu ul li a.icon.type4{background-image:url(/images/menu/ic_subMenu_type4.png);}
+			.subMenu ul li a.icon.type5{background-image:url(/images/menu/ic_subMenu_type5.png);}
+			
+			.subMenu ul li.active a.icon{/*No icons on active state*/
+			background:#fff url(/images/menu/bg_subMenuLevel1Active.png) 0 0 repeat-y!important;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** addressFooter *******************************************************************************************/	
+/********************************************************************************************************************/		
+		/*Frontpage*/
+			.frontpage .addressFooter{
+			height:1px;
+			overflow:visible;
+			font-size:0px;
+			line-height:0px;
+			position:relative;
+			top:0px;
+			left:40px;
+			}
+				.frontpage .addressFooter address{
+				height:30px;
+				font-size:11px;
+				line-height:15px;
+				font-style:normal;
+				position:absolute;
+				left:0;
+				top:-56px;
+				width:191px;
+				border-top:2px solid #efefef;
+				padding-top:8px;
+				color:#929292;
+				}
+					.frontpage .addressFooter address strong{
+					display:none;
+					}
+					.frontpage .addressFooter address span{
+					display:block;
+					}
+					.frontpage .addressFooter address span a{
+					}
+					.frontpage .addressFooter address span.line1{
+					}
+					.frontpage .addressFooter address span.line2{
+					display:none;
+					}
+					.frontpage .addressFooter address span.line3{
+					}
+					.frontpage .addressFooter address span.line4{
+					display:none;
+					}
+					
+		/*threeColumnPage, twooColumnPage Address*/
+			.threeColumnPage .addressFooter, 
+			.twoColumnPage .addressFooter{
+			height:1px;
+			overflow:visible;
+			font-size:0px;
+			line-height:0px;
+			position:relative;
+			top:0px;
+			left:25px;
+			}
+				.threeColumnPage .addressFooter address, 
+				.twoColumnPage .addressFooter address{
+				height:30px;
+				font-size:11px;
+				line-height:15px;
+				font-style:normal;
+				position:absolute;
+				left:0;
+				top:-99px;
+				width:191px;
+				color:#929292;
+				}
+					.threeColumnPage .addressFooter address strong, 
+					.twoColumnPage .addressFooter address strong{
+					display:block;
+					color:#4b7470;
+					}
+					.threeColumnPage .addressFooter address span, 
+					.twoColumnPage .addressFooter address span{
+					display:block;
+					}
+					.threeColumnPage .addressFooter address span a, 
+					.twoColumnPage .addressFooter address span a{
+					}
+					.threeColumnPage .addressFooter address span.line1, 
+					.twoColumnPage .addressFooter address span.line1{
+					}
+					.threeColumnPage .addressFooter address span.line2, 
+					.twoColumnPage .addressFooter address span.line2{
+					display:block;
+					}
+					.threeColumnPage .addressFooter address span.line3, 
+					.twoColumnPage .addressFooter address span.line3{
+					}
+					.threeColumnPage .addressFooter address span.line4, 
+					.twoColumnPage .addressFooter address span.line4{
+					display:block;
+					padding-top:3px;
+					}
+							
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/********************************************************************************************************************/	
+/********** Main Footer *********************************************************************************************/	
+/********************************************************************************************************************/
+		.main .mainFooter{
+		height:36px;
+		width:100%;
+		background:url(/images/backgrounds/bg_mainFooter.png) no-repeat;
+		}
+		
+		
+		
+		.footerBg{
+		width:100%;
+		background:red;
+		height:50px;
+		position:absolute;
+		bottom:0;
+		left:0;
+		}
+
+
+
+
+
+/********************************************************************************************************************/	
+/********** Main Credit *********************************************************************************************/	
+/********************************************************************************************************************/
+		.mainCredit{
+		}
+			.mainCredit a{
+			}
+
+	
+
+
+	
+	
+	
+	

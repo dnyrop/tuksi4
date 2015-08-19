@@ -1,0 +1,42 @@
+* {
+	color: #7f1301;
+	padding: 0;
+	margin: 0;
+	font-family: tahoma, sans-serif;
+	font-size: 11px;
+	line-heights:12px;
+}
+
+body{
+	background: #ffffff;
+	margin: 7;
+}
+
+table, p {
+	 font-size: 11px;
+	 line-heights:12px;
+}
+iframe {
+	border: 1px #d3d2d7 solid;
+	background: #F6F6F3;
+	 font-size: 11px;
+	 line-heights:12px;
+}
+
+.inpTxt, .inpSel {
+	color: 7f1301;
+	border: 1px #d3d2d7 solid;
+	background: #f6f6f3;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+ul {
+	list-style-size: 50px;
+	margin: 0px 0px 0px 7px;
+}
+li {
+	font-size: 11px;
+	margin: 0px 0px 0px 7px;
+	
+}

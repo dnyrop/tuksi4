@@ -1,0 +1,13 @@
+/* Tuksi Frontend - Stylesheet */
+/* Version 2006-06-07-AMA */
+
+/* importing main stylesheets */
+@import url("global.css");
+@import url("main.css");
+@import url("modules.css");
+@import url("print.css");
+
+/* import browser hacks */
+
+/* ie win */
+/*\*/ @import url("hack-ie-win.css"); /**/

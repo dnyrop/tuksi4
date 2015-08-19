@@ -1,0 +1,137 @@
+body {
+	background: #dedede url(../images/backgrounds/bg_rightTop.png) repeat-x scroll 0px -11px;
+	padding:0;
+	margin:0;
+	font: 11px Arial,Helvetica,Verdana,sans-serif;
+}
+
+input.inpTxt,
+select {
+	padding:1px 0 0 1px;
+	font:11px/12px Arial, Helvetica, Verdana, sans-serif;
+	color:#333;
+	border:1px solid #9c9c9c;
+	margin-bottom: 5px;
+}
+select {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#head {
+	height: 30px;
+}
+
+/* tabs */
+.tabsBox{
+position:absolute;
+top:5px;
+right:2px;
+height:25px;
+/*overflow:hidden;*//*Hvis hidden, dropdown menuen vises ikke*/
+width:99.5%;
+}
+	.tabsBox ul{
+	list-style:none;
+	float:right;
+	margin:0;
+	padding:0;
+	}
+		.tabsBox ul li{
+		float:right;
+		height:25px;
+		background:url(../images/menu/gx_rightTopTabs.png) 0px 0px no-repeat;
+		}
+			.tabsBox ul li a{
+			padding:0 13px;
+			text-align:center;
+			display:block;
+			float:left;
+			background:red;
+			height:25px;
+			line-height:23px;
+			text-decoration:none;
+			background:url(../images/menu/gx_rightTopTabs.png) 100% -40px no-repeat;
+			color:#4f4d4d;
+			outline:0;
+			}
+			.tabsBox ul li a:hover{
+			color:#010101;
+			}
+			.tabsBox ul li.active{
+			background-position:0px -80px;
+			}
+			.tabsBox ul li.active a, 
+			.topTabsMenu ul li.active a:hover{
+			background-position:100% -120px;
+			color:#000;
+			}
+
+#content {
+	padding: 10px;
+}
+form {
+	margin:0;
+}
+table {
+	border-collapse: collapse;;
+}
+td { vertical-align: top; padding: 0; }
+td label { padding-top: 2px; display: block; }
+
+
+.actionButtons{
+height:23px;
+margin: 10px 0 0;
+position: absolute;
+bottom: 10px;
+right: 10px;
+}	
+	.actionButtons ul.ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	float: right;
+	}	
+		.actionButtons ul li.li{
+		float:left;
+		padding:0 3px;
+		}
+		
+		.actionButtons ul li.actionMenuPosition{
+		padding:0 13px;
+		}
+		
+
+		/*Preview button position*/
+		.actionButtons ul li.previewPosition{
+		float:right;
+		}
+
+		
+a.buttonType1{
+height:21px;
+position:relative;/*(IE6)*/
+zoom:1;/*(IE6)*/
+text-decoration:none;
+}
+a.buttonType1 span{
+background:url(../images/buttons/bn_buttonType1.png) 0 0 no-repeat;
+height:21px;
+text-decoration:none;
+float:left;
+cursor:pointer;
+}
+	a.buttonType1 span span, 
+	a.buttonType1 span:hover span{
+	background:url(../images/buttons/bn_buttonType1.png) 100% -40px no-repeat;
+	padding:0 16px;
+	height:21px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	}	
+a.buttonType1 span:hover{
+background-position:0px -80px;
+}

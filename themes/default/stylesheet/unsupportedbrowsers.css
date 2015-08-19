@@ -1,0 +1,23 @@
+/* Tuksi Frontend - Stylesheet */
+/* RPE 12.10.2007 */
+
+/* Unsupported browsers*/
+** body *{
+display /'*''*'/ :none;
+}
+** body{
+background /'*''*'/ :#201E1F url(../images/unsupportedbrowsers.png) center center no-repeat;
+}
+
+
+
+/*IE5.5
+**body *{
+_*display**:none;
+}
+*/
+/* IE 5.0 5.5 og mac IE5.2
+** body *{
+display /'*''*'/ :none;
+}
+/*

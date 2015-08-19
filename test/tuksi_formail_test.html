@@ -1,0 +1,79 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!--
+
+ Produceret af
+ WEB-BUREAUET DWARF
+ info@dwarf.dk
+ www.dwarf.dk
+
+-->
+
+<head>
+<title>TUKSI mailform test</title>
+<form ACTION="include/tuksi_formmail.php" METHOD="post" name="Form">
+	<input TYPE="hidden" NAME="debug" VALUE="0">
+	<input TYPE="hidden" NAME="subject" VALUE="Info fra ">
+	<input TYPE="hidden" NAME="redirect" VALUE="tilmelding_tak.html">
+	<input TYPE="hidden" NAME="from_name" VALUE="House in Piemonte website">
+	<input TYPE="hidden" NAME="from_email" VALUE="admin@dwarf.dk">
+	<input TYPE="hidden" NAME="formvars" VALUE="antalm2:Antal m2,antalsove:Antal soveværelser,grund:Grundstørrelse,stand:Stand,navn:Navn,telefon:Telefon,email:E-mail">
+	<input TYPE="hidden" NAME="emailheader" VALUE="Kontakt oplysning indtastet på website.">
+<table width="300" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" height="25">Type hus:</td>
+    <td><select name="Type hus:" class="select" id="Type hus:">
+        <option>&bull; v&aelig;lg &bull;</option>
+        <option>Landhus</option>
+        <option>Byhus</option>
+        <option>Lejlighed</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td height="25">Antal m<sup>2:</sup></td>
+    <td><input name="antalm2" type="text" class="input" id="Antal m2:"></td>
+  </tr>
+  <tr>
+    <td height="25">Antal sovev&aelig;relser:</td>
+    <td><input name="antalsove" type="text" class="input" id="Antal soveværelser:"></td>
+  </tr>
+  <tr>
+    <td height="25">Grundst&oslash;rrelse:</td>
+    <td><input name="grund" type="text" class="input" id="Grundstørrelse:"></td>
+  </tr>
+  <tr>
+    <td height="25">Stand:</td>
+    <td><select name="stand" class="select" id="Stand:">
+      <option>&bull; v&aelig;lg &bull;</option>
+      <option>Renoveret</option>
+      <option>Til renovering</option>
+        </select></td>
+  </tr>
+  <tr>
+    <td height="25">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25">Navn:</td>
+    <td><input name="navn" type="text" class="input" id="Navn:"></td>
+  </tr>
+  <tr>
+    <td height="25">Telefon:</td>
+    <td><input name="telefon" type="text" class="input" id="Telefon:"></td>
+  </tr>
+  <tr>
+    <td height="25">E-mail:</td>
+    <td><input name="email" type="text" class="input" id="E-mail:"></td>
+  </tr>
+</table>
+<br>
+<table width="307" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="right"><input name="imageField" type="submit" value=" Send " width="83" height="34" border="0"></td>
+  </tr>
+</table>
+  </form>
+<br>
+</body>
+</html>
