@@ -1,14 +1,24 @@
-# tuksi4
+# Tuksi4
 ## Installation
-* Clone repo
-* mkdir templates/compiled
-* chmod -R 777 templates/compiled
-* cat sql/tuksi4.sql > mysql YOURDB
-* edit configuration/tuksi_db.ini with you credentials
-* Edit database tabel 'cmssitesetup' and setup you URL to allow logon til TUKSI (/tuksi)
+Clone repository
+```sh
+$ git clone git@github.com:dwarfhq/tuksi4.git
+```
+Create writable folders
+```sh
+$ mkdir media uploads download templates/compiled shellscripts/newsletter/spool shellscripts/newsletter/spool/single
+$ chmod -R 777 media uploads download templates/compiled shellscripts/newsletter/spool shellscripts/newsletter/spool/single
+```
+Setup database
+```sh
+$ mysql YOURDB < sql.tuksi4.sql
+```
+## Site setup
+* Edit configuration/tuksi_db.ini with your favorite editor and change the credentials
+* Edit the database table 'cmssitesetup' and setup you URL to allow logon til TUKSI (/tuksi)
 * Setup apache conf to folder and with alias  "preview." + URL
-* goto http://preview.URL
-* goto admin http://URL/tuksi and logon with admin / ChangeMe
+* View site at http://preview.URL
+* Login to the admin interface at http://URL/tuksi with these credentials: admin / ChangeMe
 
 
-Sorry content is in Danish
+We apologize that a lot of documentation and content is in Danish.

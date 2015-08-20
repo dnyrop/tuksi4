@@ -1,4 +1,16 @@
-uploads/*
-media/*
+# Ignore swap files
 *.swp
-templates/compiled/*
+*~
+
+# Ignore media and upload folders
+media*
+uploads*
+
+# Ignore download folder
+download/
+
+# Ignore compiled templates folder
+templates/compiled/
+
+# Ignore newsletter spool folder
+shellscripts/newsletter/spool
